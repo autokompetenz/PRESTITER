@@ -6,33 +6,33 @@ const fadeUp = { initial: { opacity: 0, y: 24 }, whileInView: { opacity: 1, y: 0
 export default function PolitiqueConfidentialite() {
   return (
     <>
-      <PageHero title="Politique de confidentialité" />
+      <PageHero title="Informativa sulla privacy" />
       <section className="section">
         <div className="container" style={{ maxWidth: 800 }}>
           <motion.div {...fadeUp}>
-            <h2>1. Collecte des données</h2>
-            <p>Nous collectons les données personnelles que vous nous fournissez lors de votre demande de prêt : nom, prénom, email, téléphone, adresse, date de naissance, situation professionnelle, IBAN et pièce d'identité.</p>
+            <h2>1. Raccolta dei dati</h2>
+            <p>Raccogliamo i dati personali che ci fornisci durante la richiesta di prestito: nome, cognome, email, telefono, indirizzo, data di nascita, situazione professionale, IBAN e documento d'identità.</p>
 
-            <h2 style={{ marginTop: 32 }}>2. Utilisation des données</h2>
-            <p>Vos données sont utilisées exclusivement pour :<br />- Traiter votre demande de prêt<br />- Vous contacter concernant votre dossier<br />- Respecter nos obligations légales et réglementaires</p>
+            <h2 style={{ marginTop: 32 }}>2. Utilizzo dei dati</h2>
+            <p>I tuoi dati sono utilizzati esclusivamente per:<br />- Gestire la tua richiesta di prestito<br />- Contattarti riguardo alla tua pratica<br />- Adempiere ai nostri obblighi legali e regolamentari</p>
 
-            <h2 style={{ marginTop: 32 }}>3. Partage des données</h2>
-            <p>Vos données personnelles ne sont jamais revendues à des tiers. Elles sont transmises uniquement à l'équipe Prestiter pour le traitement de votre demande et, le cas échéant, aux prêteurs dans le cadre de la mise en relation.</p>
+            <h2 style={{ marginTop: 32 }}>3. Condivisione dei dati</h2>
+            <p>I tuoi dati personali non vengono mai rivenduti a terzi. Vengono trasmessi solo al team Prestiter per il trattamento della tua richiesta e, se del caso, ai finanziatori nell'ambito dell'incontro tra le parti.</p>
 
-            <h2 style={{ marginTop: 32 }}>4. Sécurité des données</h2>
-            <p>Nous mettons en œuvre toutes les mesures techniques et organisationnelles nécessaires pour garantir la sécurité et la confidentialité de vos données : chiffrement SSL, stockage sécurisé, accès restreint.</p>
+            <h2 style={{ marginTop: 32 }}>4. Sicurezza dei dati</h2>
+            <p>Adottiamo tutte le misure tecniche e organizzative necessarie per garantire la sicurezza e la riservatezza dei tuoi dati: crittografia SSL, archiviazione sicura, accesso limitato.</p>
 
-            <h2 style={{ marginTop: 32 }}>5. Durée de conservation</h2>
-            <p>Vos données sont conservées pendant la durée nécessaire au traitement de votre demande, puis archivées conformément aux obligations légales (5 ans).</p>
+            <h2 style={{ marginTop: 32 }}>5. Durata di conservazione</h2>
+            <p>I tuoi dati sono conservati per il periodo necessario al trattamento della tua richiesta, poi archiviati in conformità con gli obblighi legali (5 anni).</p>
 
-            <h2 style={{ marginTop: 32 }}>6. Vos droits</h2>
-            <p>Conformément au RGPD, vous disposez des droits suivants :<br />- Droit d'accès à vos données<br />- Droit de rectification<br />- Droit à l'effacement<br />- Droit à la limitation du traitement<br />- Droit à la portabilité des données</p>
-            <p>Pour exercer vos droits, contactez-nous à : contact@prestiter-spa.fr.</p>
+            <h2 style={{ marginTop: 32 }}>6. I tuoi diritti</h2>
+            <p>In conformità con il RGPD, hai i seguenti diritti:<br />- Diritto di accesso ai tuoi dati<br />- Diritto di rettifica<br />- Diritto alla cancellazione<br />- Diritto alla limitazione del trattamento<br />- Diritto alla portabilità dei dati</p>
+            <p>Per esercitare i tuoi diritti, contattaci a: contact@prestiter-spa.fr.</p>
 
-            <h2 style={{ marginTop: 32 }}>7. Cookies</h2>
-            <p>Notre site utilise uniquement des cookies techniques nécessaires au fonctionnement de la plateforme. Aucun cookie publicitaire ou de tracking n'est utilisé.</p>
+            <h2 style={{ marginTop: 32 }}>7. Cookie</h2>
+            <p>Il nostro sito utilizza solo cookie tecnici necessari al funzionamento della piattaforma. Nessun cookie pubblicitario o di tracciamento viene utilizzato.</p>
 
-            <p className="text-muted" style={{ marginTop: 32 }}>Dernière mise à jour : juin 2026.</p>
+            <p className="text-muted" style={{ marginTop: 32 }}>Ultimo aggiornamento: giugno 2026.</p>
           </motion.div>
         </div>
       </section>

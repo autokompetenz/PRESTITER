@@ -17,11 +17,11 @@ export default function LoanSimulator({ compact }) {
 
   return (
     <div className="simulator-card">
-      <h3>Simulez votre prêt</h3>
+      <h3>Simula il tuo prestito</h3>
 
       <div className="simulator-group">
         <div className="simulator-label">
-          <span>Montant souhaité</span>
+          <span>Importo desiderato</span>
           <strong>{amount.toLocaleString('fr-FR')} €</strong>
         </div>
         <input
@@ -33,6 +33,18 @@ export default function LoanSimulator({ compact }) {
           value={amount}
           onChange={e => setAmount(Number(e.target.value))}
         />
+        <input
+          type="number"
+          className="form-control"
+          min={100}
+          max={3000000}
+          value={amount}
+          onChange={e => {
+            const v = Number(e.target.value)
+            if (!isNaN(v) && v >= 100 && v <= 3000000) setAmount(v)
+          }}
+          style={{ marginTop: 8, textAlign: 'center', fontWeight: 700 }}
+        />
         <div className="d-flex justify-content-between" style={{ fontSize: 11, color: 'var(--text-3)', marginTop: 2 }}>
           <span>100 €</span>
           <span>3 000 000 €</span>
@@ -41,8 +53,8 @@ export default function LoanSimulator({ compact }) {
 
       <div className="simulator-group">
         <div className="simulator-label">
-          <span>Durée de remboursement</span>
-          <strong>{months} mois</strong>
+          <span>Durata del rimborso</span>
+          <strong>{months} mesi</strong>
         </div>
         <input
           type="range"
@@ -54,35 +66,35 @@ export default function LoanSimulator({ compact }) {
           onChange={e => setMonths(Number(e.target.value))}
         />
         <div className="d-flex justify-content-between" style={{ fontSize: 11, color: 'var(--text-3)', marginTop: 2 }}>
-          <span>3 mois</span>
-          <span>10 mois</span>
+          <span>3 mesi</span>
+          <span>10 mesi</span>
         </div>
       </div>
 
       <div className="simulator-result">
         <div className="simulator-result-item">
-          <div className="label">Mensualité</div>
+          <div className="label">Mensilità</div>
           <div className="value">{monthly.toFixed(2)} €</div>
         </div>
         <div className="simulator-result-item">
-          <div className="label">Coût total</div>
+          <div className="label">Costo totale</div>
           <div className="value green">{totalCost.toFixed(2)} €</div>
         </div>
         <div className="simulator-result-item">
-          <div className="label">Montant emprunté</div>
+          <div className="label">Importo richiesto</div>
           <div className="value" style={{ fontSize: 17 }}>{amount.toLocaleString('fr-FR')} €</div>
         </div>
         <div className="simulator-result-item">
-          <div className="label">TAEG fixe</div>
+          <div className="label">TAEG fisso</div>
           <div className="value" style={{ fontSize: 17 }}>{taeg} %</div>
         </div>
       </div>
 
       <Link to="/emprunter" className="btn btn-primary w-100" style={{ justifyContent: 'center' }}>
-        Faire ma demande
+        Fai richiesta
       </Link>
 
-      <p className="simulator-note">Exemple représentatif : prêt de {amount} € sur {months} mois, TAEG fixe de {taeg}%, mensualité de {monthly.toFixed(2)} €, montant total dû de {totalCost.toFixed(2)} €. Un crédit vous engage et doit être remboursé. Vérifiez vos capacités de remboursement.</p>
+      <p className="simulator-note">Esempio rappresentativo: prestito di {amount} € su {months} mesi, TAEG fisso del {taeg}%, mensilità di {monthly.toFixed(2)} €, importo totale dovuto di {totalCost.toFixed(2)} €. Un credito ti impegna e deve essere rimborsato. Verifica la tua capacità di rimborso.</p>
     </div>
   )
 }

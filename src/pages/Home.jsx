@@ -11,39 +11,39 @@ const fadeUp = { initial: { opacity: 0, y: 24 }, whileInView: { opacity: 1, y: 0
 const stagger = { whileInView: 'animate', viewport: { once: true, margin: '-40px' }, initial: 'initial', variants: { animate: { transition: { staggerChildren: 0.08 } } } }
 
 const loanTypes = [
-  { icon: '🎯', label: 'Prêt personnel', to: '/prets/personnel', desc: '100€ à 3 000 000€ — Sans justificatif', tag: 'Populaire' },
-  { icon: '⚡', label: 'Prêt d\'urgence', to: '/prets/urgence', desc: '100€ à 50 000€ — Réponse sous quelques heures', tag: 'Prioritaire' },
-  { icon: '🎓', label: 'Prêt étudiant', to: '/prets/etudiant', desc: '100€ à 50 000€ — Sans revenus stables', tag: 'Jeunes' },
-  { icon: '💼', label: 'Prêt professionnel', to: '/prets/professionnel', desc: '1 000€ à 3 000 000€ — Freelances & auto-entrepreneurs', tag: 'Pro' },
+  { icon: '🎯', label: 'Prestito personale', to: '/prets/personnel', desc: 'Da 100€ a 3 000 000€ — Senza giustificativo', tag: 'Popolare' },
+  { icon: '⚡', label: 'Prestito d\'emergenza', to: '/prets/urgence', desc: 'Da 100€ a 50 000€ — Risposta in poche ore', tag: 'Prioritario' },
+  { icon: '🎓', label: 'Prestito studentesco', to: '/prets/etudiant', desc: 'Da 100€ a 50 000€ — Senza redditi stabili', tag: 'Giovani' },
+  { icon: '💼', label: 'Prestito professionale', to: '/prets/professionnel', desc: 'Da 1 000€ a 3 000 000€ — Freelance & partite IVA', tag: 'Pro' },
 ]
 
 const advantages = [
-  { icon: '📄', title: 'Pas de justificatif complexe', text: 'Fini les dossiers administratifs interminables. Une pièce d\'identité suffit.' },
-  { icon: '👥', title: 'Ouvert à tous les profils', text: 'Étudiants, freelances, CDD, intérimaires, RSA, retraités... Tous acceptés.' },
-  { icon: '🚫', title: 'Aucune inscription requise', text: 'Pas de compte à créer. Remplissez le formulaire en 5 minutes.' },
-  { icon: '📱', title: '100% mobile', text: 'Faites votre demande depuis votre téléphone, où que vous soyez.' },
-  { icon: '🔒', title: 'Contrat sécurisé', text: 'Plateforme sécurisée, données chiffrées, contrat électronique conforme.' },
-  { icon: '⚡', title: 'Réponse sous 24h', text: 'Une réponse rapide et un virement sous 48h après acceptation.' },
+  { icon: '📄', title: 'Nessun giustificativo complesso', text: 'Basta con le pratiche amministrative infinite. Basta un documento d\'identità.' },
+  { icon: '👥', title: 'Aperto a tutti i profili', text: 'Studenti, freelance, determinato, interinali, RSA, pensionati... Tutti accettati.' },
+  { icon: '🚫', title: 'Nessuna registrazione richiesta', text: 'Nessun account da creare. Compila il modulo in 5 minuti.' },
+  { icon: '📱', title: '100% mobile', text: 'Fai la tua richiesta dal telefono, ovunque tu sia.' },
+  { icon: '🔒', title: 'Contratto sicuro', text: 'Piattaforma sicura, dati crittografati, contratto elettronico conforme.' },
+  { icon: '⚡', title: 'Risposta in 24h', text: 'Una risposta rapida e un bonifico entro 48h dopo l\'accettazione.' },
 ]
 
 const stats = [
-  { icon: '🤝', end: 500, suffix: '+', label: 'Prêts financés', desc: 'Depuis notre lancement' },
-  { icon: '💶', end: 150000, suffix: ' €', label: 'Montant total prêté', desc: 'Distribué aux emprunteurs' },
-  { icon: '⏱️', end: 24, suffix: 'h', label: 'Délai de réponse', desc: 'Sous 24h ouvrées' },
-  { icon: '⭐', end: 4.8, suffix: '/5', label: 'Satisfaction', desc: 'Note moyenne des clients' },
+  { icon: '🤝', end: 500, suffix: '+', label: 'Prestiti finanziati', desc: 'Dal nostro lancio' },
+  { icon: '💶', end: 150000, suffix: ' €', label: 'Importo totale prestato', desc: 'Distribuito ai mutuatari' },
+  { icon: '⏱️', end: 24, suffix: 'h', label: 'Tempo di risposta', desc: 'Entro 24h lavorative' },
+  { icon: '⭐', end: 4.8, suffix: '/5', label: 'Soddisfazione', desc: 'Voto medio dei clienti' },
 ]
 
 const useCases = [
-  { icon: '🚗', title: 'Achat véhicule', montant: 15000, scenario: 'Sophie, 32 ans, a besoin d\'une voiture pour aller travailler. Prêt de 15 000€ remboursable sur 60 mois.', mensualite: '281,67 €' },
-  { icon: '📚', title: 'Financement études', montant: 8000, scenario: 'Lucas, 21 ans, étudiant en licence. Financement de ses frais de scolarité. Prêt de 8 000€ sur 36 mois.', mensualite: '240,24 €' },
-  { icon: '🏠', title: 'Rénovation maison', montant: 25000, scenario: 'Marie et Paul, jeunes parents. Rénovation complète de leur maison. Prêt de 25 000€ sur 84 mois.', mensualite: '331,10 €' },
+  { icon: '🚗', title: 'Acquisto veicolo', montant: 15000, scenario: 'Sophie, 32 anni, ha bisogno di un\'auto per andare al lavoro. Prestito di 15.000€ rimborsabile in 60 mesi.', mensualite: '281,67 €' },
+  { icon: '📚', title: 'Finanziamento studi', montant: 8000, scenario: 'Luca, 21 anni, studente universitario. Finanziamento delle tasse scolastiche. Prestito di 8.000€ in 36 mesi.', mensualite: '240,24 €' },
+  { icon: '🏠', title: 'Ristrutturazione casa', montant: 25000, scenario: 'Maria e Paolo, giovani genitori. Ristrutturazione completa della loro casa. Prestito di 25.000€ in 84 mesi.', mensualite: '331,10 €' },
 ]
 
 const profiles = [
-  { icon: '🎓', label: 'Étudiant' }, { icon: '💼', label: 'CDI' }, { icon: '📋', label: 'CDD' },
-  { icon: '💻', label: 'Freelance' }, { icon: '🔧', label: 'Indépendant' }, { icon: '📅', label: 'Intérimaire' },
-  { icon: '🤝', label: 'RSA' }, { icon: '🔄', label: 'Sans emploi' }, { icon: '👴', label: 'Retraité' },
-  { icon: '🏛️', label: 'Non-résident' }, { icon: '🏠', label: 'Propriétaire' }, { icon: '🏢', label: 'Locataire' },
+  { icon: '🎓', label: 'Studente' }, { icon: '💼', label: 'Indeterminato' }, { icon: '📋', label: 'Determinato' },
+  { icon: '💻', label: 'Freelance' }, { icon: '🔧', label: 'Indipendente' }, { icon: '📅', label: 'Interinale' },
+  { icon: '🤝', label: 'RSA' }, { icon: '🔄', label: 'Disoccupato' }, { icon: '👴', label: 'Pensionato' },
+  { icon: '🏛️', label: 'Non residente' }, { icon: '🏠', label: 'Proprietario' }, { icon: '🏢', label: 'Affittuario' },
 ]
 
 export default function Home() {
@@ -57,7 +57,7 @@ export default function Home() {
         <div className="container" style={{ position: 'relative', zIndex: 2, display: 'flex', alignItems: 'center', flexWrap: 'wrap', gap: 32 }}>
           <motion.div className="hero-content" initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }} style={{ flex: '1 1 400px' }}>
             <div className="hero-badges">
-              {['Réponse 24h', 'Virement 48h', '100% sécurisé', 'Sans inscription'].map(b => (
+              {['Risposta 24h', 'Bonifico 48h', '100% sicuro', 'Senza registrazione'].map(b => (
                 <span key={b} className="hero-badge">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><polyline points="20 6 9 17 4 12" /></svg>
                   {b}
@@ -68,19 +68,19 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-            >Le micro-prêt rapide et simple <span className="shimmer-text">entre particuliers</span></motion.h1>
+            >Il micro-prestito rapido e semplice <span className="shimmer-text">tra privati</span></motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-            >De 100 € à 3 000 000 €, remboursables sur 3 à 120 mois. Pas de justificatifs complexes, pas d'inscription. Une réponse sous 24h.</motion.p>
+            >Da 100 € a 3 000 000 €, rimborsabili in 3-120 mesi. Nessun giustificativo complesso, nessuna registrazione. Una risposta in 24h.</motion.p>
             <motion.div className="hero-actions"
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
             >
-              <Link to="/emprunter" className="btn btn-primary">Faire ma demande</Link>
-              <Link to="/comment-ca-marche" className="btn btn-ghost" style={{ borderColor: 'rgba(255,255,255,0.25)', color: '#fff' }}>En savoir plus</Link>
+              <Link to="/emprunter" className="btn btn-primary">Fai richiesta</Link>
+              <Link to="/comment-ca-marche" className="btn btn-ghost" style={{ borderColor: 'rgba(255,255,255,0.25)', color: '#fff' }}>Scopri di più</Link>
             </motion.div>
           </motion.div>
           <motion.div className="hero-simulator" initial={{ opacity: 0, x: 30, scale: 0.95 }} animate={{ opacity: 1, x: 0, scale: 1 }} transition={{ duration: 0.6, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}>
@@ -94,16 +94,16 @@ export default function Home() {
         <FloatingDecorations />
         <div className="container">
           <motion.div className="section-title" {...fadeUp}>
-            <div className="section-eyebrow">Processus</div>
-            <h2 className="section-header">Comment ça marche ?</h2>
-            <p className="section-sub">Obtenez votre prêt en 4 étapes simples, sans vous déplacer et sans papier.</p>
+            <div className="section-eyebrow">Processo</div>
+            <h2 className="section-header">Come funziona?</h2>
+            <p className="section-sub">Ottieni il tuo prestito in 4 semplici passaggi, senza spostarti e senza carta.</p>
           </motion.div>
           <motion.div className="how-it-works" {...stagger}>
             {[
-              { n: '1', title: 'Je remplis le formulaire', text: 'Moins de 5 minutes, sans inscription. Montant, durée et vos informations personnelles.' },
-              { n: '2', title: 'Je reçois une confirmation', text: 'Un email de confirmation avec votre numéro de dossier unique vous est envoyé immédiatement.' },
-              { n: '3', title: 'L\'équipe étudie mon dossier', text: 'Analyse rapide de votre demande. Nous vous contactons par email ou téléphone sous 24h.' },
-              { n: '4', title: 'Je reçois les fonds', text: 'Virement sur votre compte bancaire sous 48h si votre demande est acceptée.' },
+              { n: '1', title: 'Compilo il modulo', text: 'Meno di 5 minuti, senza registrazione. Importo, durata e informazioni personali.' },
+              { n: '2', title: 'Ricevo una conferma', text: 'Una email di conferma con il tuo numero di pratica unico ti viene inviata immediatamente.' },
+              { n: '3', title: 'Il team esamina la mia pratica', text: 'Analisi rapida della tua richiesta. Ti contattiamo via email o telefono entro 24h.' },
+              { n: '4', title: 'Ricevo i fondi', text: 'Bonifico sul tuo conto bancario entro 48h se la richiesta è accettata.' },
             ].map((s, i) => (
               <motion.div key={i} className="step-card tilt-card" variants={{ initial: { opacity: 0, y: 20 }, animate: { opacity: 1, y: 0, transition: { duration: 0.5 } } }}>
                 <motion.div className="step-number" whileHover={{ scale: 1.15, rotate: [0, -5, 5, 0] }} transition={{ duration: 0.4 }}>{s.n}</motion.div>
@@ -120,9 +120,9 @@ export default function Home() {
         <FloatingDecorations />
         <div className="container">
           <motion.div className="section-title" {...fadeUp}>
-            <div className="section-eyebrow">Offres</div>
-            <h2 className="section-header">Nos solutions de prêt</h2>
-            <p className="section-sub">4 types de prêts adaptés à chaque situation. Un TAEG fixe de 4,5% quoi qu'il arrive.</p>
+            <div className="section-eyebrow">Offerte</div>
+            <h2 className="section-header">Le nostre soluzioni di prestito</h2>
+            <p className="section-sub">4 tipi di prestito adatti a ogni situazione. Un TAEG fisso del 4,5% in ogni caso.</p>
           </motion.div>
           <motion.div className="row g-4" initial="initial" whileInView="animate" viewport={{ once: true, margin: '-40px' }} variants={{ animate: { transition: { staggerChildren: 0.1 } } }}>
             {loanTypes.map((l, i) => (
@@ -132,13 +132,13 @@ export default function Home() {
                   <div className="advantage-icon" style={{ fontSize: 24 }}>{l.icon}</div>
                   <h3>{l.label}</h3>
                   <p style={{ flex: 1 }}>{l.desc}</p>
-                  <span style={{ fontSize: 12, fontWeight: 700, color: 'var(--blue)', marginTop: 8 }}>Voir l'offre →</span>
+                  <span style={{ fontSize: 12, fontWeight: 700, color: 'var(--blue)', marginTop: 8 }}>Vedi l'offerta →</span>
                 </Link>
               </motion.div>
             ))}
           </motion.div>
           <motion.div className="text-center mt-5" {...fadeUp}>
-            <Link to="/profils-acceptes" className="btn btn-ghost">Voir toutes nos offres (8 types)</Link>
+            <Link to="/profils-acceptes" className="btn btn-ghost">Vedi tutte le offerte (8 tipi)</Link>
           </motion.div>
         </div>
       </section>
@@ -148,28 +148,28 @@ export default function Home() {
         <FloatingDecorations />
         <div className="container">
           <motion.div className="section-title" {...fadeUp}>
-            <div className="section-eyebrow">Comparatif</div>
-            <h2 className="section-header">Banque vs Prestiter</h2>
-            <p className="section-sub">Pourquoi des milliers de Français nous choisissent plutôt que leur banque.</p>
+            <div className="section-eyebrow">Confronto</div>
+            <h2 className="section-header">Banca vs Prestiter</h2>
+            <p className="section-sub">Perché migliaia di persone ci scelgono invece della loro banca.</p>
           </motion.div>
           <motion.div className="table-responsive" style={{ maxWidth: 800 }} {...fadeUp}>
             <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 13 }}>
               <thead>
                 <tr style={{ background: 'var(--blue)', color: '#fff' }}>
-                  <th style={{ padding: '12px 16px', textAlign: 'left', fontWeight: 700 }}>Critère</th>
-                  <th style={{ padding: '12px 16px', textAlign: 'center', fontWeight: 700 }}>Banque traditionnelle</th>
+                  <th style={{ padding: '12px 16px', textAlign: 'left', fontWeight: 700 }}>Criterio</th>
+                  <th style={{ padding: '12px 16px', textAlign: 'center', fontWeight: 700 }}>Banca tradizionale</th>
                   <th style={{ padding: '12px 16px', textAlign: 'center', fontWeight: 700, background: 'var(--blue-dark)' }}>Prestiter</th>
                 </tr>
               </thead>
               <tbody>
                 {[
-                  { critere: 'Délai de réponse', banque: '3 à 10 jours', prestiter: 'Moins de 24h' },
-                  { critere: 'Justificatifs', banque: '3 derniers bulletins de salaire, avis d\'imposition, justificatif de domicile', prestiter: 'Pièce d\'identité + IBAN' },
-                  { critere: 'Inscription', banque: 'Rendez-vous en agence, ouverture de compte', prestiter: 'Aucune, formulaire simple' },
-                  { critere: 'Profils acceptés', banque: 'CDI uniquement, période d\'essai exclue', prestiter: 'Tous les profils : CDD, RSA, étudiant, freelance...' },
-                  { critere: 'Montant minimum', banque: '1 000 € minimum', prestiter: '100 € minimum' },
-                  { critere: 'Frais de dossier', banque: 'Souvent 50 à 150 €', prestiter: '0 €' },
-                  { critere: 'Remboursement anticipé', banque: 'Frais jusqu\'à 3% du capital restant', prestiter: '0 €, sans pénalité' },
+                  { critere: 'Tempo di risposta', banque: 'Da 3 a 10 giorni', prestiter: 'Meno di 24h' },
+                  { critere: 'Giustificativi', banque: '3 ultime buste paga, dichiarazione dei redditi, certificato di residenza', prestiter: 'Documento d\'identità + IBAN' },
+                  { critere: 'Registrazione', banque: 'Appuntamento in agenzia, apertura conto', prestiter: 'Nessuna, modulo semplice' },
+                  { critere: 'Profili accettati', banque: 'Solo indeterminato, escluso periodo di prova', prestiter: 'Tutti i profili: determinato, RSA, studente, freelance...' },
+                  { critere: 'Importo minimo', banque: '1.000 € minimo', prestiter: '100 € minimo' },
+                  { critere: 'Spese di pratica', banque: 'Spesso da 50 a 150 €', prestiter: '0 €' },
+                  { critere: 'Rimborso anticipato', banque: 'Spese fino al 3% del capitale residuo', prestiter: '0 €, senza penali' },
                 ].map((r, i) => (
                   <tr key={i} style={{ background: i % 2 === 0 ? 'var(--bg-card)' : 'var(--bg-card2)', borderBottom: '1px solid var(--border)' }}>
                     <td style={{ padding: '10px 14px', fontWeight: 600, color: 'var(--text)', fontSize: 12 }}>{r.critere}</td>
@@ -188,9 +188,9 @@ export default function Home() {
         <FloatingDecorations />
         <div className="container">
           <motion.div className="section-title" {...fadeUp}>
-            <div className="section-eyebrow">Avantages</div>
-            <h2 className="section-header">Pourquoi choisir Prestiter ?</h2>
-            <p className="section-sub">Une solution de financement simple, accessible et transparente, sans aucun frais caché.</p>
+            <div className="section-eyebrow">Vantaggi</div>
+            <h2 className="section-header">Perché scegliere Prestiter?</h2>
+            <p className="section-sub">Una soluzione di finanziamento semplice, accessibile e trasparente, senza costi nascosti.</p>
           </motion.div>
           <motion.div className="advantage-grid" {...stagger}>
             {advantages.map((a, i) => (
@@ -209,9 +209,9 @@ export default function Home() {
         <FloatingDecorations />
         <div className="container">
           <motion.div className="section-title" {...fadeUp}>
-            <div className="section-eyebrow">Cas concrets</div>
-            <h2 className="section-header">Des situations réelles, des solutions simples</h2>
-            <p className="section-sub">Découvrez comment Prestiter a aidé des centaines de personnes dans leur vie quotidienne.</p>
+            <div className="section-eyebrow">Casi concreti</div>
+            <h2 className="section-header">Situazioni reali, soluzioni semplici</h2>
+            <p className="section-sub">Scopri come Prestiter ha aiutato centinaia di persone nella vita quotidiana.</p>
           </motion.div>
           <motion.div className="row g-4" initial="initial" whileInView="animate" viewport={{ once: true, margin: '-40px' }} variants={{ animate: { transition: { staggerChildren: 0.1 } } }}>
             {useCases.map((c, i) => (
@@ -221,7 +221,7 @@ export default function Home() {
                   <h3>{c.title}</h3>
                   <p style={{ fontSize: 13, marginBottom: 12 }}>{c.scenario}</p>
                   <div style={{ borderTop: '1px solid var(--border)', paddingTop: 12, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                    <span style={{ fontSize: 12, color: 'var(--text-3)' }}>Mensualité</span>
+                    <span style={{ fontSize: 12, color: 'var(--text-3)' }}>Mensilità</span>
                     <span style={{ fontSize: 18, fontWeight: 900, color: 'var(--blue)' }}>{c.mensualite}</span>
                   </div>
                 </div>
@@ -236,9 +236,9 @@ export default function Home() {
         <FloatingDecorations />
         <div className="container">
           <motion.div className="section-title" {...fadeUp}>
-            <div className="section-eyebrow">Accessibilité</div>
-            <h2 className="section-header">Tous les profils sont acceptés</h2>
-            <p className="section-sub">CDI, CDD, étudiant, freelance, RSA, retraité, sans emploi... Nous ne discriminons pas.</p>
+            <div className="section-eyebrow">Accessibilità</div>
+            <h2 className="section-header">Tutti i profili sono accettati</h2>
+            <p className="section-sub">Indeterminato, determinato, studente, freelance, RSA, pensionato, disoccupato... Non discriminiamo.</p>
           </motion.div>
           <motion.div className="profile-chips" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ staggerChildren: 0.04 }}>
             {profiles.map((p, i) => (
@@ -249,8 +249,8 @@ export default function Home() {
             ))}
           </motion.div>
           <motion.div className="text-center mt-4" {...fadeUp}>
-            <p className="small text-muted" style={{ maxWidth: 500, margin: '0 auto 16px' }}>Pas de discrimination liée à l'âge, la situation professionnelle ou la nationalité. Chaque dossier est étudié individuellement.</p>
-            <Link to="/profils-acceptes" className="btn btn-ghost">Voir les conditions d'éligibilité</Link>
+            <p className="small text-muted" style={{ maxWidth: 500, margin: '0 auto 16px' }}>Nessuna discriminazione basata su età, situazione lavorativa o nazionalità. Ogni pratica viene valutata individualmente.</p>
+            <Link to="/profils-acceptes" className="btn btn-ghost">Vedi i requisiti di idoneità</Link>
           </motion.div>
         </div>
       </section>
@@ -260,9 +260,9 @@ export default function Home() {
         <FloatingDecorations />
         <div className="container">
           <motion.div className="section-title" {...fadeUp}>
-            <div className="section-eyebrow">Témoignages</div>
-            <h2 className="section-header">Ils nous ont fait confiance</h2>
-            <p className="section-sub" style={{ color: 'var(--text-2)' }}>Note moyenne : 4.8/5 — Basée sur plus de 500 avis vérifiés.</p>
+            <div className="section-eyebrow">Testimonianze</div>
+            <h2 className="section-header">Ci hanno dato fiducia</h2>
+            <p className="section-sub" style={{ color: 'var(--text-2)' }}>Voto medio: 4.8/5 — Basato su oltre 500 recensioni verificate.</p>
           </motion.div>
           <motion.div className="testimonials" {...stagger}>
             {testimonials.slice(0, 3).map((t, i) => (
@@ -284,9 +284,9 @@ export default function Home() {
         <FloatingDecorations />
         <div className="container">
           <motion.div className="section-title" {...fadeUp}>
-            <div className="section-eyebrow" style={{ color: 'rgba(255,255,255,0.5)', borderColor: 'rgba(255,255,255,0.3)' }}>Chiffres</div>
-            <h2 className="section-header">Prestiter en chiffres</h2>
-            <p className="section-sub" style={{ color: 'rgba(255,255,255,0.6)' }}>Notre impact en quelques chiffres clés.</p>
+            <div className="section-eyebrow" style={{ color: 'rgba(255,255,255,0.5)', borderColor: 'rgba(255,255,255,0.3)' }}>Numeri</div>
+            <h2 className="section-header">Prestiter in numeri</h2>
+            <p className="section-sub" style={{ color: 'rgba(255,255,255,0.6)' }}>Il nostro impatto in numeri chiave.</p>
           </motion.div>
           <motion.div className="stats-grid" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }}>
             {stats.map((s, i) => (
@@ -306,10 +306,10 @@ export default function Home() {
           </motion.div>
           <motion.div className="features-row" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }}>
             {[
-              { val: '4,5 %', lab: 'TAEG fixe', desc: 'Quel que soit le montant' },
-              { val: '100 %', lab: '100% en ligne', desc: 'Du formulaire au virement' },
-              { val: '0 €', lab: 'Frais de dossier', desc: 'Aucun frais caché' },
-              { val: '48 h', lab: 'Virement', desc: 'Après acceptation' },
+              { val: '4,5 %', lab: 'TAEG fisso', desc: 'Qualunque sia l\'importo' },
+              { val: '100 %', lab: '100% online', desc: 'Dal modulo al bonifico' },
+              { val: '0 €', lab: 'Spese di pratica', desc: 'Nessun costo nascosto' },
+              { val: '48 h', lab: 'Bonifico', desc: 'Dopo accettazione' },
             ].map((s, i) => (
               <motion.div key={i} className="features-row-item" initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.08 }}>
                 <div className="features-row-val">{s.val}</div>
@@ -326,18 +326,18 @@ export default function Home() {
         <FloatingDecorations />
         <div className="container">
           <motion.div className="section-title" {...fadeUp}>
-            <div className="section-eyebrow">Sécurité</div>
-            <h2 className="section-header">Votre sécurité est notre priorité</h2>
-            <p className="section-sub">Plateforme réglementée, données chiffrées, transactions sécurisées.</p>
+            <div className="section-eyebrow">Sicurezza</div>
+            <h2 className="section-header">La tua sicurezza è la nostra priorità</h2>
+            <p className="section-sub">Piattaforma regolamentata, dati crittografati, transazioni sicure.</p>
           </motion.div>
           <motion.div className="row g-4" initial="initial" whileInView="animate" viewport={{ once: true, margin: '-40px' }} variants={{ animate: { transition: { staggerChildren: 0.08 } } }}>
             {[
-              { icon: '🏛️', title: 'Enregistré ORIAS', text: 'Prestiter SPA est immatriculé comme Intermédiaire en Financement Participatif (IFP) auprès de l\'ORIAS.' },
-              { icon: '🔐', title: 'Chiffrement SSL 256-bit', text: 'Toutes vos données sont chiffrées de bout en bout avec un certificat SSL de niveau bancaire.' },
-              { icon: '🔒', title: 'Conformité RGPD', text: 'Vos données personnelles sont traitées conformément au Règlement Général sur la Protection des Données.' },
-              { icon: '📝', title: 'Contrat électronique', text: 'Chaque prêt fait l\'objet d\'un contrat signé électroniquement, avec valeur légale.' },
-              { icon: '🏦', title: 'Compte séquestre', text: 'Les fonds transitent par un compte sécurisé. La plateforme ne détient jamais l\'argent directement.' },
-              { icon: '🛡️', title: 'Lutte anti-blanchiment', text: 'Notre plateforme respecte les obligations LCB-FT (Lutte contre le Blanchiment et le Financement du Terrorisme).' },
+              { icon: '🏛️', title: 'Registrato ORIAS', text: 'Prestiter SPA è registrato come Intermediario in Finanziamento Partecipativo (IFP) presso l\'ORIAS.' },
+              { icon: '🔐', title: 'Crittografia SSL 256-bit', text: 'Tutti i tuoi dati sono crittografati end-to-end con un certificato SSL di livello bancario.' },
+              { icon: '🔒', title: 'Conformità GDPR', text: 'I tuoi dati personali sono trattati conformemente al Regolamento Generale sulla Protezione dei Dati.' },
+              { icon: '📝', title: 'Contratto elettronico', text: 'Ogni prestito è oggetto di un contratto firmato elettronicamente, con valore legale.' },
+              { icon: '🏦', title: 'Conto deposito', text: 'I fondi transitano attraverso un conto sicuro. La piattaforma non detiene mai il denaro direttamente.' },
+              { icon: '🛡️', title: 'Antiriciclaggio', text: 'La nostra piattaforma rispetta gli obblighi AML (Antiriciclaggio) e CFT (Contro il Finanziamento del Terrorismo).' },
             ].map((s, i) => (
               <motion.div key={i} className="col-md-4" variants={{ initial: { opacity: 0, y: 20 }, animate: { opacity: 1, y: 0, transition: { duration: 0.5 } } }}>
                 <div className="advantage-card tilt-card h-100">
@@ -357,14 +357,14 @@ export default function Home() {
         <div className="container">
           <motion.div className="section-title" {...fadeUp}>
             <div className="section-eyebrow">FAQ</div>
-            <h2 className="section-header">Questions fréquentes</h2>
-            <p className="section-sub">Les réponses aux questions les plus courantes sur nos micro-prêts.</p>
+            <h2 className="section-header">Domande frequenti</h2>
+            <p className="section-sub">Le risposte alle domande più comuni sui nostri micro-prestiti.</p>
           </motion.div>
           <motion.div style={{ maxWidth: 700, margin: '0 auto', display: 'flex', flexDirection: 'column', gap: 10 }} {...fadeUp}>
             {faq.flatMap(cat => cat.questions).slice(0, 4).map((item, i) => <FaqItem key={i} q={item.q} r={item.a} />)}
           </motion.div>
           <motion.div className="text-center mt-4" {...fadeUp}>
-            <Link to="/faq" className="btn btn-ghost">Voir toutes les questions</Link>
+            <Link to="/faq" className="btn btn-ghost">Vedi tutte le domande</Link>
           </motion.div>
         </div>
       </section>
@@ -380,15 +380,15 @@ export default function Home() {
             transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
             whileHover={{ scale: 1.01 }}
           >
-            <h2>Prêt à faire votre demande ?</h2>
-            <p>Rejoignez les centaines d'emprunteurs qui nous ont fait confiance. Réponse sous 24h, virement sous 48h.</p>
+            <h2>Pronto a fare richiesta?</h2>
+            <p>Unisciti alle centinaia di mutuatari che ci hanno dato fiducia. Risposta in 24h, bonifico in 48h.</p>
             <div className="d-flex gap-3 justify-content-center flex-wrap">
-              <Link to="/emprunter" className="btn btn-primary">Emprunter maintenant</Link>
-              <Link to="/comment-ca-marche" className="btn btn-ghost" style={{ color: '#fff', borderColor: 'rgba(255,255,255,0.3)' }}>Comment ça marche</Link>
+              <Link to="/emprunter" className="btn btn-primary">Richiedi ora</Link>
+              <Link to="/comment-ca-marche" className="btn btn-ghost" style={{ color: '#fff', borderColor: 'rgba(255,255,255,0.3)' }}>Come funziona</Link>
             </div>
           </motion.div>
           <motion.div className="text-center mt-4" {...fadeUp}>
-            <p className="small text-muted" style={{ fontSize: 11 }}>Un crédit vous engage et doit être remboursé. Vérifiez vos capacités de remboursement avant de vous engager. TAEG fixe 4,5%. Prestiter SPA — Via della Spiga, 24, 20121 Milano, Italie. Enregistré à l'ORIAS.</p>
+            <p className="small text-muted" style={{ fontSize: 11 }}>Un credito ti impegna e deve essere rimborsato. Verifica la tua capacità di rimborso prima di impegnarti. TAEG fisso 4,5%. Prestiter SPA — Via della Spiga, 24, 20121 Milano, Italia. Registrato presso l'ORIAS.</p>
           </motion.div>
         </div>
       </section>

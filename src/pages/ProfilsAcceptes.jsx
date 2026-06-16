@@ -6,34 +6,34 @@ import CTASection from '../components/CTASection'
 const fadeUp = { initial: { opacity: 0, y: 24 }, whileInView: { opacity: 1, y: 0 }, viewport: { once: true }, transition: { duration: 0.5, ease: [0.16, 1, 0.3, 1] } }
 
 const loanTypes = [
-  { icon: '🎯', label: 'Prêt personnel', to: '/prets/personnel', desc: 'Le plus courant. Aucune justification d\'utilisation requise. De 100€ à 3 000 000€.' },
-  { icon: '⚡', label: 'Prêt d\'urgence', to: '/prets/urgence', desc: 'Traitement prioritaire, réponse sous quelques heures. Jusqu\'à 50 000€.' },
-  { icon: '🎓', label: 'Prêt étudiant', to: '/prets/etudiant', desc: 'Pour les 18-26 ans. Conditions assouplies, sans revenus stables accepté.' },
-  { icon: '💼', label: 'Prêt professionnel', to: '/prets/professionnel', desc: 'Freelances, auto-entrepreneurs, artisans. Revenus variables acceptés.' },
-  { icon: '🏠', label: 'Prêt travaux', to: '/prets/travaux', desc: 'Petits travaux et aménagement sans crédit immobilier lourd.' },
-  { icon: '🔄', label: 'Consolidation dettes', to: '/prets/consolidation', desc: 'Regroupez vos petites dettes en une seule mensualité.' },
-  { icon: '❤️', label: 'PTZ Solidaire (0%)', to: '/prets/ptz', desc: 'Prêt sans intérêts pour les profils les plus fragiles.' },
-  { icon: '🤝', label: 'Prêt P2P', to: '/prets/p2p', desc: 'Prêt direct entre particuliers, sécurisé par notre plateforme.' },
+  { icon: '🎯', label: 'Prestito personale', to: '/prets/personnel', desc: 'Il più comune. Nessuna giustificazione d\'uso richiesta. Da 100€ a 3.000.000€.' },
+  { icon: '⚡', label: 'Prestito urgente', to: '/prets/urgence', desc: 'Trattamento prioritario, risposta in poche ore. Fino a 50.000€.' },
+  { icon: '🎓', label: 'Prestito studentesco', to: '/prets/etudiant', desc: 'Per i 18-26 anni. Condizioni agevolate, senza reddito stabile accettato.' },
+  { icon: '💼', label: 'Prestito professionale', to: '/prets/professionnel', desc: 'Freelance, partite IVA, artigiani. Redditi variabili accettati.' },
+  { icon: '🏠', label: 'Prestito lavori', to: '/prets/travaux', desc: 'Piccoli lavori e ristrutturazioni senza mutuo pesante.' },
+  { icon: '🔄', label: 'Consolidamento debiti', to: '/prets/consolidation', desc: 'Raggruppa i tuoi piccoli debiti in un\'unica rata mensile.' },
+  { icon: '❤️', label: 'PTZ Solidale (0%)', to: '/prets/ptz', desc: 'Prestito senza interessi per i profili più fragili.' },
+  { icon: '🤝', label: 'Prestito P2P', to: '/prets/p2p', desc: 'Prestito diretto tra privati, protetto dalla nostra piattaforma.' },
 ]
 
 const borrowerProfiles = [
-  { icon: '💼', label: 'CDI' }, { icon: '📋', label: 'CDD' }, { icon: '💻', label: 'Freelance' },
-  { icon: '🔧', label: 'Indépendant' }, { icon: '📅', label: 'Intérimaire' }, { icon: '🎓', label: 'Étudiant' },
-  { icon: '👴', label: 'Retraité' }, { icon: '🤝', label: 'Allocataire RSA' }, { icon: '🔄', label: 'Sans emploi' },
-  { icon: '🏛️', label: 'Non-résident' }, { icon: '🏠', label: 'Propriétaire' }, { icon: '🏢', label: 'Locataire' },
+  { icon: '💼', label: 'Tempo indeterminato' }, { icon: '📋', label: 'Tempo determinato' }, { icon: '💻', label: 'Freelance' },
+  { icon: '🔧', label: 'Indipendente' }, { icon: '📅', label: 'Interinale' }, { icon: '🎓', label: 'Studente' },
+  { icon: '👴', label: 'Pensionato' }, { icon: '🤝', label: 'Beneficiario RSA' }, { icon: '🔄', label: 'Disoccupato' },
+  { icon: '🏛️', label: 'Non residente' }, { icon: '🏠', label: 'Proprietario' }, { icon: '🏢', label: 'Affittuario' },
 ]
 
 export default function ProfilsAcceptes() {
   return (
     <>
-      <PageHero title="Profils acceptés" lead="Chez Prestiter, nous acceptons tous les profils. Pas de discrimination, pas de rejet systématique." />
+      <PageHero title="Profili accettati" lead="Da Prestiter accettiamo tutti i profili. Nessuna discriminazione, nessun rifiuto sistematico." />
 
       <section className="section">
         <div className="container">
           <motion.div className="section-title" {...fadeUp}>
-            <div className="section-eyebrow">Profils</div>
-            <h2 className="section-header">Tous les profils sont acceptés</h2>
-            <p className="section-sub">CDI, CDD, freelance, étudiant, retraité, RSA, sans emploi... Aucun profil n'est exclu a priori.</p>
+            <div className="section-eyebrow">Profili</div>
+            <h2 className="section-header">Tutti i profili sono accettati</h2>
+            <p className="section-sub">Tempo indeterminato, tempo determinato, freelance, studente, pensionato, RSA, disoccupato... Nessun profilo è escluso a priori.</p>
           </motion.div>
           <motion.div className="profile-chips" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ staggerChildren: 0.04 }}>
             {borrowerProfiles.map((p, i) => (
@@ -49,9 +49,9 @@ export default function ProfilsAcceptes() {
       <section className="section section--alt">
         <div className="container">
           <motion.div className="section-title" {...fadeUp}>
-            <div className="section-eyebrow">Éligibilité</div>
-            <h2 className="section-header">Types de prêts disponibles</h2>
-            <p className="section-sub">Choisissez le prêt qui correspond à votre besoin parmi nos 8 offres.</p>
+            <div className="section-eyebrow">Idoneità</div>
+            <h2 className="section-header">Tipi di prestito disponibili</h2>
+            <p className="section-sub">Scegli il prestito che corrisponde alle tue esigenze tra le nostre 8 offerte.</p>
           </motion.div>
           <motion.div className="row g-5" initial="initial" whileInView="animate" viewport={{ once: true, margin: '-40px' }} variants={{ animate: { transition: { staggerChildren: 0.05 } } }}>
             {loanTypes.map((p, i) => (
@@ -70,20 +70,20 @@ export default function ProfilsAcceptes() {
       <section className="section section--blue">
         <div className="container">
           <motion.div className="section-title" {...fadeUp}>
-            <div className="section-eyebrow">Conditions</div>
-            <h2 className="section-header">Conditions d'éligibilité</h2>
-            <p className="section-sub">Les conditions minimales pour emprunter sur Prestiter.</p>
+            <div className="section-eyebrow">Condizioni</div>
+            <h2 className="section-header">Requisiti di idoneità</h2>
+            <p className="section-sub">I requisiti minimi per ottenere un prestito su Prestiter.</p>
           </motion.div>
           <motion.div className="row g-4" style={{ maxWidth: 700, margin: '0 auto' }} {...fadeUp}>
             {[
-              { title: 'Âge minimum', text: '18 ans minimum. Pas de limite d\'âge maximum.' },
-              { title: 'Résidence', text: 'Résident France, Italie, Belgique ou Suisse. Les non-résidents sont acceptés sous conditions.' },
-              { title: 'Compte bancaire', text: 'Posséder un IBAN valide à votre nom dans la zone SEPA.' },
-              { title: 'Carte bancaire', text: 'Carte bancaire valide pour les prélèvements automatiques mensuels.' },
-              { title: 'Capacité de remboursement', text: 'Justifier de revenus suffisants (travail, allocations, pensions). Pas de montant minimum de revenus exigé.' },
-              { title: 'Pièce d\'identité', text: 'CNI ou passeport en cours de validité. Pour les non-ressortissants UE, titre de séjour accepté.' },
-              { title: 'Nationalité', text: 'Ouvert à toutes les nationalités. Aucune discrimination d\'origine.' },
-              { title: 'Casier judiciaire', text: 'Aucune vérification de casier judiciaire n\'est effectuée.' },
+              { title: 'Età minima', text: '18 anni minimo. Nessun limite massimo di età.' },
+              { title: 'Residenza', text: 'Residente in Francia, Italia, Belgio o Svizzera. I non residenti sono accettati a determinate condizioni.' },
+              { title: 'Conto bancario', text: 'Possedere un IBAN valido a tuo nome nella zona SEPA.' },
+              { title: 'Carta bancaria', text: 'Carta bancaria valida per i prelievi automatici mensili.' },
+              { title: 'Capacità di rimborso', text: 'Dimostrare di avere redditi sufficienti (lavoro, assegni, pensioni). Nessun importo minimo di reddito richiesto.' },
+              { title: 'Documento d\'identità', text: 'Carta d\'identità o passaporto in corso di validità. Per i non cittadini UE, permesso di soggiorno accettato.' },
+              { title: 'Nazionalità', text: 'Aperto a tutte le nazionalità. Nessuna discriminazione di origine.' },
+              { title: 'Casellario giudiziario', text: 'Nessuna verifica del casellario giudiziario viene effettuata.' },
             ].map((c, i) => (
               <div key={i} className="col-md-6">
                 <div style={{ background: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: 'var(--radius)', padding: 16 }}>
@@ -96,7 +96,7 @@ export default function ProfilsAcceptes() {
         </div>
       </section>
 
-      <CTASection title="Vous correspondez à ces critères ?" text="Faites votre demande en 5 minutes chrono, sans inscription." cta={{ to: '/emprunter', label: 'Faire ma demande' }} />
+      <CTASection title="Corrispondi a questi requisiti?" text="Invia la tua richiesta in 5 minuti cronometrati, senza registrazione." cta={{ to: '/emprunter', label: 'Fai richiesta' }} />
     </>
   )
 }

@@ -2,20 +2,20 @@ import { useState, useEffect, useRef } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 
 const pretTypes = [
-  { to: '/prets/personnel', label: 'Personnel' },
-  { to: '/prets/urgence', label: 'Urgence' },
-  { to: '/prets/etudiant', label: 'Étudiant' },
-  { to: '/prets/professionnel', label: 'Professionnel' },
-  { to: '/prets/travaux', label: 'Travaux' },
-  { to: '/prets/consolidation', label: 'Consolidation' },
+  { to: '/prets/personnel', label: 'Personale' },
+  { to: '/prets/urgence', label: 'Emergenza' },
+  { to: '/prets/etudiant', label: 'Studentesco' },
+  { to: '/prets/professionnel', label: 'Professionale' },
+  { to: '/prets/travaux', label: 'Lavori' },
+  { to: '/prets/consolidation', label: 'Consolidamento' },
   { to: '/prets/ptz', label: 'PTZ 0%' },
   { to: '/prets/p2p', label: 'P2P' },
 ]
 
 const links = [
-  { to: '/emprunter', label: 'Emprunter' },
-  { to: '/preter', label: 'Prêter' },
-  { to: '/profils-acceptes', label: 'Prêts', dropdown: pretTypes },
+  { to: '/emprunter', label: 'Richiedere' },
+  { to: '/preter', label: 'Investire' },
+  { to: '/profils-acceptes', label: 'Prestiti', dropdown: pretTypes },
   { to: '/faq', label: 'FAQ' },
 ]
 
@@ -82,7 +82,7 @@ export default function Navbar() {
               </li>
             ))}
             <li>
-              <Link to="/emprunter" className="btn btn-primary btn-sm">Faire ma demande</Link>
+              <Link to="/emprunter" className="btn btn-primary btn-sm">Fai richiesta</Link>
             </li>
           </ul>
 
@@ -115,7 +115,7 @@ export default function Navbar() {
             ))}
             <li>
               <Link to="/profils-acceptes" className={`nav-link${pathname === '/profils-acceptes' || pathname.startsWith('/prets/') ? ' active' : ''}`} onClick={() => setOpen(false)}>
-                Tous les prêts
+                Tutti i prestiti
               </Link>
               <div className="mobile-submenu">
                 {pretTypes.map(p => (
@@ -124,7 +124,7 @@ export default function Navbar() {
               </div>
             </li>
             <li style={{ marginTop: 16, paddingTop: 16, borderTop: '1px solid var(--border)', width: '100%' }}>
-              <Link to="/emprunter" className="btn btn-primary w-100" style={{ justifyContent: 'center' }} onClick={() => setOpen(false)}>Faire ma demande</Link>
+              <Link to="/emprunter" className="btn btn-primary w-100" style={{ justifyContent: 'center' }} onClick={() => setOpen(false)}>Fai richiesta</Link>
             </li>
           </ul>
         </div>

@@ -9,7 +9,7 @@ const fadeUp = { initial: { opacity: 0, y: 24 }, whileInView: { opacity: 1, y: 0
 export default function FAQPage() {
   return (
     <>
-      <PageHero title="Questions fréquentes" lead="Tout ce que vous devez savoir avant de faire votre demande de prêt." />
+      <PageHero title="Domande frequenti" lead="Tutto quello che devi sapere prima di fare la tua richiesta di prestito." />
 
       <section className="section">
         <div className="container">
@@ -26,7 +26,7 @@ export default function FAQPage() {
         </div>
       </section>
 
-      <CTASection title="Encore des questions ?" text="Contactez-nous, notre équipe vous répondra sous 24h." cta={{ to: '/contact', label: 'Nous contacter' }} />
+      <CTASection title="Ancora domande?" text="Contattaci, il nostro team ti risponderà entro 24h." cta={{ to: '/contact', label: 'Contattaci' }} />
     </>
   )
 }

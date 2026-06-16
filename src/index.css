@@ -417,3 +417,9 @@ select.form-control{cursor:pointer}
 .parallax-floater--circle{width:300px;height:300px;border-radius:50%;border:2px solid var(--blue)}
 .parallax-floater--dot{width:12px;height:12px;border-radius:50%;background:var(--blue)}
 .parallax-floater--ring{width:200px;height:200px;border-radius:50%;border:1px solid var(--blue);border-top-color:transparent}
+
+.btn-floating-demande{position:fixed;bottom:24px;right:24px;z-index:999;display:inline-flex;align-items:center;gap:8px;background:var(--blue);color:#fff;font-family:'Outfit',sans-serif;font-size:14px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:14px 22px;border-radius:50px;box-shadow:0 6px 24px rgba(0,86,179,0.4);text-decoration:none;transition:all .3s var(--ease);animation:float 3s var(--ease) infinite}
+.btn-floating-demande:hover{background:var(--blue-dark);color:#fff;transform:translateY(-3px) scale(1.03);box-shadow:0 10px 32px rgba(0,86,179,0.5);animation:none}
+.btn-floating-demande svg{transition:transform .2s}
+.btn-floating-demande:hover svg{transform:translateX(3px)}
+@media(max-width:575px){.btn-floating-demande{right:16px;bottom:16px;padding:12px 18px;font-size:12px;gap:6px}}

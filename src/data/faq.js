@@ -1,41 +1,41 @@
 const faq = [
   {
-    category: 'Emprunteur', questions: [
-      { q: 'Combien puis-je emprunter ?', a: 'Les montants proposés vont de 100 € à 3 000 000 €, remboursables sur une durée de 3 à 120 mois.' },
-      { q: 'Quel est le délai pour recevoir mon argent ?', a: 'Sous 48 heures après acceptation de votre dossier. Le virement est effectué directement sur votre compte bancaire.' },
-      { q: 'Suis-je éligible si je suis en CDD / freelance / étudiant ?', a: 'Oui, nous acceptons tous les profils : CDI, CDD, freelance, indépendant, intérimaire, étudiant, allocataire RSA, retraité, sans emploi. L\'important est votre capacité de remboursement.' },
-      { q: 'Comment se font les remboursements ?', a: 'Les remboursements sont prélevés automatiquement sur votre carte bancaire chaque mois, à date fixe. Vous êtes prévenu par email avant chaque prélèvement.' },
-      { q: 'Que se passe-t-il en cas de retard de paiement ?', a: 'En cas de difficulté, contactez-nous immédiatement. Nous étudions toujours des solutions personnalisées (report d\'échéance, rééchelonnement) avant toute procédure. Des pénalités de retard peuvent s\'appliquer au-delà de 15 jours.' },
-      { q: 'Puis-je rembourser par anticipation ?', a: 'Oui, vous pouvez rembourser à tout moment sans pénalité. Vous ne payez que les intérêts courus jusqu\'à la date de remboursement.' },
-      { q: 'Dois-je créer un compte pour faire une demande ?', a: 'Non, aucune inscription n\'est nécessaire. Il vous suffit de remplir le formulaire de demande en quelques minutes.' },
-      { q: 'Comment savoir si ma demande a bien été reçue ?', a: 'Vous recevrez un email de confirmation immédiatement après la soumission de votre formulaire avec votre numéro de dossier.' },
-      { q: 'Puis-je modifier ma demande après l\'avoir soumise ?', a: 'Contactez-nous par email ou téléphone si vous devez modifier votre demande. Nous pouvons ajuster le montant ou la durée tant que le dossier est en cours d\'analyse.' },
-      { q: 'Que faire si je perds mon emploi pendant le remboursement ?', a: 'Prévenez-nous dès que possible. Nous étudions des solutions adaptées : report d\'échéances, réduction temporaire des mensualités ou rééchelonnement de la dette.' },
-      { q: 'Puis-je prolonger la durée de mon prêt ?', a: 'Oui, sous réserve d\'acceptation par notre équipe. La prolongation peut réduire vos mensualités mais augmentera le coût total des intérêts.' },
-      { q: 'Comment Prestiter gagne-t-il de l\'argent ?', a: 'Prestiter perçoit une commission sur les intérêts versés par l\'emprunteur. Notre modèle est transparent : le TAEG de 4,5% inclut tous les coûts, sans frais cachés ni frais de dossier.' },
+    category: 'Richiedente', questions: [
+      { q: 'Quanto posso prendere in prestito?', a: 'Gli importi proposti vanno da 100 € a 3.000.000 €, rimborsabili in un periodo da 3 a 120 mesi.' },
+      { q: 'Quanto tempo ci vuole per ricevere i miei soldi?', a: 'Entro 48 ore dall'accettazione della tua pratica. Il bonifico viene effettuato direttamente sul tuo conto bancario.' },
+      { q: 'Sono idoneo se ho un contratto a tempo determinato / sono freelance / studente?', a: 'Sì, accettiamo tutti i profili: tempo indeterminato, tempo determinato, freelance, libero professionista, interinale, studente, percettore di RSA, pensionato, disoccupato. L'importante è la tua capacità di rimborso.' },
+      { q: 'Come avvengono i rimborsi?', a: 'I rimborsi vengono prelevati automaticamente dalla tua carta bancaria ogni mese, a data fissa. Ricevi una notifica via email prima di ogni prelievo.' },
+      { q: 'Cosa succede in caso di ritardo nel pagamento?', a: 'In caso di difficoltà, contattaci immediatamente. Esaminiamo sempre soluzioni personalizzate (rinvio della scadenza, riprogrammazione) prima di qualsiasi procedura. Possono essere applicate penali per ritardi oltre i 15 giorni.' },
+      { q: 'Posso rimborsare anticipatamente?', a: 'Sì, puoi rimborsare in qualsiasi momento senza penali. Paghi solo gli interessi maturati fino alla data di rimborso.' },
+      { q: 'Devo creare un account per fare una richiesta?', a: 'No, non è necessaria alcuna registrazione. Ti basta compilare il modulo di richiesta in pochi minuti.' },
+      { q: 'Come faccio a sapere se la mia richiesta è stata ricevuta?', a: 'Riceverai un'email di conferma immediatamente dopo l'invio del tuo modulo con il numero della tua pratica.' },
+      { q: 'Posso modificare la mia richiesta dopo averla inviata?', a: 'Contattaci via email o telefono se devi modificare la tua richiesta. Possiamo adeguare l'importo o la durata finché la pratica è in fase di analisi.' },
+      { q: 'Cosa fare se perdo il lavoro durante il rimborso?', a: 'Avvisaci il prima possibile. Esaminiamo soluzioni adeguate: rinvio delle scadenze, riduzione temporanea delle rate mensili o riprogrammazione del debito.' },
+      { q: 'Posso prolungare la durata del mio prestito?', a: 'Sì, previa accettazione da parte del nostro team. Il prolungamento può ridurre le rate mensili ma aumenterà il costo totale degli interessi.' },
+      { q: 'Come guadagna Prestiter?', a: 'Prestiter riceve una commissione sugli interessi pagati dal richiedente. Il nostro modello è trasparente: il TAEG del 4,5% include tutti i costi, senza spese nascoste né spese di pratica.' },
     ]
   },
   {
-    category: 'Prêteur', questions: [
-      { q: 'Quels sont les risques liés au prêt entre particuliers ?', a: 'Les demandes de prêts sont rigoureusement sélectionnées par la plateforme mais le risque zéro n\'existe pas. Nous recommandons de diversifier vos placements et de ne pas investir une somme que vous ne pouvez pas vous permettre de perdre.' },
-      { q: 'Quel est le rendement attendu ?', a: 'Le rendement annuel est estimé jusqu\'à 3%, mais il peut varier selon les dossiers financés et les éventuels défauts de paiement.' },
-      { q: 'Y a-t-il des frais pour le prêteur ?', a: 'Aucun frais de gestion, d\'inscription ou de retrait. Seuls les éventuels frais bancaires liés aux virements peuvent s\'appliquer.' },
-      { q: 'Comment choisir les dossiers à financer ?', a: 'L\'équipe Prestiter présélectionne les dossiers éligibles. En tant que prêteur, vous recevez les caractéristiques de chaque prêt (montant, durée, profil) avant de décider.' },
-      { q: 'Quand est-ce que je reçois mes remboursements ?', a: 'Les remboursements sont automatiques et versés chaque mois sur votre compte bancaire, sans aucune action de votre part.' },
-      { q: 'Que se passe-t-il en cas de défaut de paiement de l\'emprunteur ?', a: 'En cas d\'impayé, notre équipe contacte l\'emprunteur et met en œuvre des solutions amiables. En dernier recours, une procédure de recouvrement peut être engagée. Le capital investi n\'est pas garanti.' },
-      { q: 'Comment déclarer mes revenus d\'intérêts aux impôts ?', a: 'Les intérêts perçus sont considérés comme des revenus de capitaux mobiliers et soumis au prélèvement forfaitaire unique (PFU) de 30% ou au barème progressif. Nous fournissons un récapitulatif annuel pour faciliter votre déclaration.' },
-      { q: 'Puis-je récupérer mon argent avant la fin du prêt ?', a: 'La cession de créance est possible sous conditions. Contactez notre équipe pour étudier les options de sortie anticipée.' },
+    category: 'Investitore', questions: [
+      { q: 'Quali sono i rischi legati al prestito tra privati?', a: 'Le richieste di prestito sono rigorosamente selezionate dalla piattaforma ma il rischio zero non esiste. Raccomandiamo di diversificare i tuoi investimenti e di non investire una somma che non puoi permetterti di perdere.' },
+      { q: 'Qual è il rendimento atteso?', a: 'Il rendimento annuo è stimato fino al 3%, ma può variare in base alle pratiche finanziate e agli eventuali inadempimenti.' },
+      { q: 'Ci sono spese per l'investitore?', a: 'Nessuna spesa di gestione, iscrizione o prelievo. Solo eventuali spese bancarie relative ai bonifici possono essere applicate.' },
+      { q: 'Come scegliere le pratiche da finanziare?', a: 'Il team di Prestiter preseleziona le pratiche idonee. Come investitore, ricevi le caratteristiche di ogni prestito (importo, durata, profilo) prima di decidere.' },
+      { q: 'Quando ricevo i miei rimborsi?', a: 'I rimborsi sono automatici e vengono versati ogni mese sul tuo conto bancario, senza alcuna azione da parte tua.' },
+      { q: 'Cosa succede in caso di inadempimento del richiedente?', a: 'In caso di mancato pagamento, il nostro team contatta il richiedente e attua soluzioni amichevoli. Come ultima risorsa, può essere avviata una procedura di recupero. Il capitale investito non è garantito.' },
+      { q: 'Come dichiarare i miei redditi da interessi al fisco?', a: 'Gli interessi percepiti sono considerati redditi da capitale mobiliare e soggetti all'imposta forfettaria unica (PFU) del 30% o alla scala progressiva. Forniamo un riepilogo annuale per facilitare la tua dichiarazione.' },
+      { q: 'Posso recuperare i miei soldi prima della fine del prestito?', a: 'La cessione del credito è possibile a determinate condizioni. Contatta il nostro team per esaminare le opzioni di uscita anticipata.' },
     ]
   },
   {
-    category: 'Général', questions: [
-      { q: 'La plateforme est-elle réglementée ?', a: 'Prestiter SPA est enregistré à l\'ORIAS comme Intermédiaire en Financement Participatif (IFP) et soumis au contrôle de l\'ACPR. Notre numéro d\'immatriculation est en cours d\'attribution.' },
-      { q: 'Mes données personnelles sont-elles protégées ?', a: 'Oui, toutes vos données sont stockées de façon sécurisée et chiffrée (SSL 256-bit). Nous ne revendons aucune information à des tiers. Conformité totale au RGPD.' },
-      { q: 'Comment contacter le service client ?', a: 'Par email à contact@prestiter-spa.fr ou par téléphone au +39 02 1234 5678, du lundi au vendredi de 9h à 18h. Réponse sous 24h ouvrées par email.' },
-      { q: 'Y a-t-il une assurance associée au prêt ?', a: 'L\'assurance n\'est pas obligatoire chez Prestiter. Nous recommandons néanmoins de souscrire une assurance perte d\'emploi ou incapacité auprès de votre assureur habituel.' },
-      { q: 'Puis-je annuler ma demande après acceptation ?', a: 'Oui, vous disposez d\'un délai de rétractation de 14 jours à compter de la signature du contrat, conformément à la législation en vigueur.' },
-      { q: 'Comment déposer une réclamation ?', a: 'Envoyez votre réclamation par email à contact@prestiter-spa.fr avec l\'objet "Réclamation". Notre équipe vous répond sous 48h ouvrées. Si le litige persiste, vous pouvez saisir le médiateur compétent.' },
-      { q: 'Quels sont les horaires d\'ouverture ?', a: 'Notre équipe est disponible du lundi au vendredi de 9h à 18h (heure italienne, CET). Le formulaire de demande est accessible 24h/24, 7j/7.' },
+    category: 'Generale', questions: [
+      { q: 'La piattaforma è regolamentata?', a: 'Prestiter SPA è registrata presso l'ORIAS come Intermediario nel Finanziamento Partecipativo (IFP) e soggetta al controllo dell'ACPR. Il nostro numero di registrazione è in fase di attribuzione.' },
+      { q: 'I miei dati personali sono protetti?', a: 'Sì, tutti i tuoi dati sono conservati in modo sicuro e crittografato (SSL 256-bit). Non rivendiamo alcuna informazione a terzi. Piena conformità al RGPD.' },
+      { q: 'Come contattare il servizio clienti?', a: 'Via email a contact@prestiter-spa.fr o telefonicamente al +39 02 1234 5678, dal lunedì al venerdì dalle 9:00 alle 18:00. Risposta entro 24 ore lavorative via email.' },
+      { q: 'C'è un'assicurazione associata al prestito?', a: 'L'assicurazione non è obbligatoria presso Prestiter. Raccomandiamo comunque di stipulare un'assicurazione contro la perdita del lavoro o l'invalidità presso il tuo assicuratore abituale.' },
+      { q: 'Posso annullare la mia richiesta dopo l'accettazione?', a: 'Sì, hai diritto a un periodo di recesso di 14 giorni dalla firma del contratto, in conformità con la legislazione vigente.' },
+      { q: 'Come presentare un reclamo?', a: 'Invia il tuo reclamo via email a contact@prestiter-spa.fr con oggetto "Reclamo". Il nostro team ti risponde entro 48 ore lavorative. Se la controversia persiste, puoi contattare il mediatore competente.' },
+      { q: 'Quali sono gli orari di apertura?', a: 'Il nostro team è disponibile dal lunedì al venerdì dalle 9:00 alle 18:00 (ora italiana, CET). Il modulo di richiesta è accessibile 24 ore su 24, 7 giorni su 7.' },
     ]
   }
 ]

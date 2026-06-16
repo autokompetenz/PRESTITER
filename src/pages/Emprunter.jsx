@@ -10,9 +10,9 @@ const fadeUp = { initial: { opacity: 0, y: 24 }, whileInView: { opacity: 1, y: 0
 const itemSlide = { initial: { opacity: 0, x: -20 }, animate: { opacity: 1, x: 0, transition: { duration: 0.4, ease: [0.16, 1, 0.3, 1] } } }
 
 const loanTypeNames = {
-  personnel: 'Prêt personnel', urgence: 'Prêt d\'urgence', etudiant: 'Prêt étudiant',
-  professionnel: 'Prêt professionnel', travaux: 'Prêt travaux',
-  consolidation: 'Prêt de consolidation', ptz: 'PTZ Solidaire (0%)', p2p: 'Prêt P2P',
+  personnel: 'Prestito personale', urgence: 'Prestito d\'emergenza', etudiant: 'Prestito studentesco',
+  professionnel: 'Prestito professionale', travaux: 'Prestito lavori',
+  consolidation: 'Prestito di consolidamento', ptz: 'PTZ Solidale (0%)', p2p: 'Prestito P2P',
 }
 
 export default function Emprunter() {
@@ -21,7 +21,7 @@ export default function Emprunter() {
 
   return (
     <>
-      <PageHero title="Emprunter" lead="Faites votre demande de micro-prêt en quelques minutes. Simple, rapide, sans inscription.">
+      <PageHero title="Richiedere" lead="Fai la tua richiesta di micro-prestito in pochi minuti. Semplice, veloce, senza registrazione.">
         {preselectedType && loanTypeNames[preselectedType] && (
           <span className="badge" style={{ marginTop: 12, fontSize: 12, padding: '6px 16px' }}>
             {loanTypeNames[preselectedType]}
@@ -34,22 +34,22 @@ export default function Emprunter() {
         <div className="container">
           <div className="row g-5" style={{ alignItems: 'flex-start' }}>
             <motion.div className="col-lg-7" initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}>
-              <div className="section-eyebrow">Simulateur</div>
-              <h2 className="section-header" style={{ textAlign: 'left', fontSize: 'clamp(26px,3vw,36px)' }}>Calculez votre mensualité</h2>
-              <p className="lead mb-4">Utilisez notre simulateur pour estimer votre mensualité et le coût total de votre prêt.</p>
+              <div className="section-eyebrow">Simulatore</div>
+              <h2 className="section-header" style={{ textAlign: 'left', fontSize: 'clamp(26px,3vw,36px)' }}>Calcola la tua mensilità</h2>
+              <p className="lead mb-4">Usa il nostro simulatore per stimare la tua mensilità e il costo totale del tuo prestito.</p>
               <motion.div style={{ maxWidth: 440 }} whileHover={{ scale: 1.01 }} transition={{ duration: 0.3 }}>
                 <LoanSimulator />
               </motion.div>
             </motion.div>
             <motion.div className="col-lg-5" initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}>
               <motion.div className="form-wrapper" whileHover={{ y: -2 }} transition={{ duration: 0.3 }}>
-                <h3>Conditions d'éligibilité</h3>
+                <h3>Requisiti di idoneità</h3>
                 <ul className="list-checked" style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                   {[
-                    'Être majeur (18 ans minimum)',
-                    'Posséder un compte courant avec IBAN',
-                    'Avoir une capacité de remboursement démontrée',
-                    'Posséder une carte bancaire valide',
+                    'Essere maggiorenne (18 anni minimo)',
+                    'Possedere un conto corrente con IBAN',
+                    'Avere una capacità di rimborso dimostrata',
+                    'Possedere una carta bancaria valida',
                   ].map((c, i) => (
                     <motion.li key={i} initial={{ opacity: 0, x: -10 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: 0.2 + i * 0.08, duration: 0.3 }} style={{ display: 'flex', alignItems: 'flex-start', gap: 10, padding: '8px 0', fontSize: 14, color: 'var(--text-2)', borderBottom: '1px solid var(--border)' }}>
                       <motion.span style={{ color: 'var(--blue)', fontWeight: 700 }} whileHover={{ scale: 1.3, color: 'var(--green)' }}>✓</motion.span> {c}
@@ -59,12 +59,12 @@ export default function Emprunter() {
               </motion.div>
 
               <motion.div className="form-wrapper mt-4" whileHover={{ y: -2 }} transition={{ duration: 0.3 }}>
-                <h3>Documents à préparer</h3>
+                <h3>Documenti da preparare</h3>
                 <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                   {[
-                    { doc: 'Pièce d\'identité', desc: 'CNI ou passeport en cours de validité' },
-                    { doc: 'IBAN / RIB', desc: 'Pour recevoir les fonds' },
-                    { doc: 'Carte bancaire', desc: 'Pour les remboursements automatiques' },
+                    { doc: 'Documento d\'identità', desc: 'Carta d\'identità o passaporto in corso di validità' },
+                    { doc: 'IBAN / RIB', desc: 'Per ricevere i fondi' },
+                    { doc: 'Carta bancaria', desc: 'Per i rimborsi automatici' },
                   ].map((d, i) => (
                     <motion.li key={i} initial={{ opacity: 0, x: -10 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: 0.3 + i * 0.1, duration: 0.3 }} style={{ display: 'flex', gap: 12, padding: '10px 0', borderBottom: i < 2 ? '1px solid var(--border)' : 'none' }}>
                       <motion.span style={{ fontSize: 18 }} whileHover={{ scale: 1.2, rotate: [0, -15, 15, 0] }}>{['🪪', '🏦', '💳'][i]}</motion.span>
@@ -72,7 +72,7 @@ export default function Emprunter() {
                     </motion.li>
                   ))}
                 </ul>
-                <p className="small text-muted mt-3" style={{ margin: 0 }}>Tout se fait en ligne, aucun document papier à envoyer.</p>
+                <p className="small text-muted mt-3" style={{ margin: 0 }}>Tutto online, nessun documento cartaceo da inviare.</p>
               </motion.div>
             </motion.div>
           </div>
@@ -83,9 +83,9 @@ export default function Emprunter() {
         <FloatingDecorations />
         <div className="container">
           <motion.div className="section-title" {...fadeUp}>
-            <div className="section-eyebrow">Demande</div>
-            <h2 className="section-header">Faire ma demande de prêt</h2>
-            <p className="section-sub">Remplissez le formulaire ci-dessous. Vous recevrez une confirmation par email immédiatement.</p>
+            <div className="section-eyebrow">Richiesta</div>
+            <h2 className="section-header">Fai la tua richiesta di prestito</h2>
+            <p className="section-sub">Compila il modulo qui sotto. Riceverai una conferma via email immediatamente.</p>
           </motion.div>
           <motion.div style={{ maxWidth: 700, margin: '0 auto' }} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}>
             <MultiStepForm preselectedType={preselectedType} />
@@ -163,13 +163,13 @@ function MultiStepForm({ preselectedType }) {
       })
       navigate('/confirmation')
     } catch (err) {
-      setError('Une erreur est survenue. Veuillez réessayer ou nous contacter par téléphone.')
+      setError('Si è verificato un errore. Riprova o contattaci per telefono.')
     } finally {
       setSending(false)
     }
   }
 
-  const steps = ['Projet', 'Identité', 'Banque', 'Pièce d\'identité', 'Récapitulatif']
+  const steps = ['Progetto', 'Identità', 'Banca', 'Documento d\'identità', 'Riepilogo']
 
   return (
     <div className="form-wrapper">
@@ -186,29 +186,35 @@ function MultiStepForm({ preselectedType }) {
         <AnimatePresence mode="wait" custom={direction}>
           {step === 1 && (
           <motion.div className="form-step" key="step1" custom={direction} variants={stepVariants} initial="enter" animate="center" exit="exit" transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}>
-            <h3>Votre projet</h3>
+            <h3>Il tuo progetto</h3>
             <div className="form-group">
-              <label>Montant souhaité</label>
+              <label>Importo desiderato</label>
               <input type="range" className="simulator-range" min={100} max={3000000} step={1000} value={form.montant}
                 onChange={e => update('montant', Number(e.target.value))} />
+              <input type="number" className="form-control" min={100} max={3000000} value={form.montant}
+                onChange={e => {
+                  const v = Number(e.target.value)
+                  if (!isNaN(v) && v >= 100 && v <= 3000000) update('montant', v)
+                }}
+                style={{ marginTop: 4, textAlign: 'center', fontWeight: 700 }} />
               <div style={{ textAlign: 'right', fontWeight: 800, color: 'var(--blue)', fontSize: 18, marginTop: 4 }}>{Number(form.montant).toLocaleString('fr-FR')} €</div>
             </div>
             <div className="form-group">
-              <label>Durée souhaitée</label>
+              <label>Durata desiderata</label>
               <input type="range" className="simulator-range" min={3} max={10} step={1} value={form.duree}
                 onChange={e => update('duree', Number(e.target.value))} />
-              <div style={{ textAlign: 'right', fontWeight: 800, color: 'var(--blue)', fontSize: 18, marginTop: 4 }}>{form.duree} mois</div>
+              <div style={{ textAlign: 'right', fontWeight: 800, color: 'var(--blue)', fontSize: 18, marginTop: 4 }}>{form.duree} mesi</div>
             </div>
             <div className="form-group">
-              <label>Motif du prêt (facultatif)</label>
+              <label>Motivo del prestito (facoltativo)</label>
               <select className="form-control" value={form.motif} onChange={e => update('motif', e.target.value)}>
-                <option value="">Sélectionnez un motif</option>
-                <option>Dépense imprévue</option>
-                <option>Réparation auto/moto</option>
-                <option>Frais médicaux</option>
-                <option>Équipement électronique</option>
-                <option>Voyage</option>
-                <option>Autre</option>
+                <option value="">Seleziona un motivo</option>
+                <option>Spesa imprevista</option>
+                <option>Riparazione auto/moto</option>
+                <option>Spese mediche</option>
+                <option>Attrezzatura elettronica</option>
+                <option>Viaggio</option>
+                <option>Altro</option>
               </select>
             </div>
           </motion.div>
@@ -216,30 +222,30 @@ function MultiStepForm({ preselectedType }) {
 
         {step === 2 && (
           <motion.div className="form-step" key="step2" custom={direction} variants={stepVariants} initial="enter" animate="center" exit="exit" transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}>
-            <h3>Vos informations personnelles</h3>
+            <h3>Le tue informazioni personali</h3>
             <div className="form-row">
               <div className="form-group">
-                <label>Nom</label>
+                <label>Cognome</label>
                 <input className="form-control" placeholder="Rossi" value={form.nom} onChange={e => update('nom', e.target.value)} />
               </div>
               <div className="form-group">
-                <label>Prénom</label>
+                <label>Nome</label>
                 <input className="form-control" placeholder="Mario" value={form.prenom} onChange={e => update('prenom', e.target.value)} />
               </div>
             </div>
             <div className="form-row">
               <div className="form-group">
-                <label>Date de naissance</label>
+                <label>Data di nascita</label>
                 <input type="date" className="form-control" value={form.naissance} onChange={e => update('naissance', e.target.value)} />
               </div>
               <div className="form-group">
-                <label>Situation professionnelle</label>
+                <label>Situazione professionale</label>
                 <select className="form-control" value={form.situation} onChange={e => update('situation', e.target.value)}>
-                  <option value="">Sélectionnez</option>
-                  <option>CDI</option><option>CDD</option><option>Freelance</option>
-                  <option>Indépendant</option><option>Intérimaire</option>
-                  <option>Étudiant</option><option>Retraité</option>
-                  <option>Allocataire RSA</option><option>Sans emploi</option>
+                  <option value="">Seleziona</option>
+                  <option>Tempo indeterminato</option><option>Tempo determinato</option><option>Freelance</option>
+                  <option>Indipendente</option><option>Interinale</option>
+                  <option>Studente</option><option>Pensionato</option>
+                  <option>Beneficiario RSA</option><option>Disoccupato</option>
                 </select>
               </div>
             </div>
@@ -248,11 +254,11 @@ function MultiStepForm({ preselectedType }) {
               <input type="email" className="form-control" placeholder="mario@example.com" value={form.email} onChange={e => update('email', e.target.value)} />
             </div>
             <div className="form-group">
-              <label>Téléphone</label>
+              <label>Telefono</label>
               <input type="tel" className="form-control" placeholder="+39 123 456 7890" value={form.telephone} onChange={e => update('telephone', e.target.value)} />
             </div>
             <div className="form-group">
-              <label>Adresse postale</label>
+              <label>Indirizzo</label>
               <input className="form-control" placeholder="Via della Spiga, 24, 20121 Milano" value={form.adresse} onChange={e => update('adresse', e.target.value)} />
             </div>
           </motion.div>
@@ -260,49 +266,49 @@ function MultiStepForm({ preselectedType }) {
 
         {step === 3 && (
           <motion.div className="form-step" key="step3" custom={direction} variants={stepVariants} initial="enter" animate="center" exit="exit" transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}>
-            <h3>Vos informations bancaires</h3>
+            <h3>Le tue informazioni bancarie</h3>
             <div className="form-group">
               <label>IBAN</label>
               <input className="form-control" placeholder="IT00 X123 4567 8901 2345 6789 012" value={form.iban} onChange={e => update('iban', e.target.value)} />
             </div>
             <div className="form-group">
-              <label>Titulaire du compte</label>
+              <label>Intestatario del conto</label>
               <input className="form-control" placeholder="Mario Rossi" value={form.titulaire} onChange={e => update('titulaire', e.target.value)} />
             </div>
-            <p className="small text-muted">Ces informations permettent de vous verser les fonds si votre demande est acceptée.</p>
+            <p className="small text-muted">Queste informazioni permettono di accreditare i fondi se la tua richiesta viene accettata.</p>
           </motion.div>
         )}
 
         {step === 4 && (
           <motion.div className="form-step" key="step4" custom={direction} variants={stepVariants} initial="enter" animate="center" exit="exit" transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}>
-            <h3>Pièce d'identité</h3>
-            <p className="small text-muted mb-4">Téléchargez le recto et le verso de votre pièce d'identité (CNI ou passeport).</p>
-            <FileUpload label="Recto de la pièce d'identité" onChange={f => update('recto', f)} />
+            <h3>Documento d'identità</h3>
+            <p className="small text-muted mb-4">Carica il fronte e il retro del tuo documento d'identità (carta d'identità o passaporto).</p>
+            <FileUpload label="Fronte del documento d'identità" onChange={f => update('recto', f)} />
             <div style={{ height: 16 }} />
-            <FileUpload label="Verso de la pièce d'identité" onChange={f => update('verso', f)} />
-            <p className="small text-muted mt-3">Formats acceptés : JPG, PNG, PDF (max 5 Mo).</p>
+            <FileUpload label="Retro del documento d'identità" onChange={f => update('verso', f)} />
+            <p className="small text-muted mt-3">Formati accettati: JPG, PNG, PDF (max 5 MB).</p>
           </motion.div>
         )}
 
         {step === 5 && (
           <motion.div className="form-step" key="step5" custom={direction} variants={stepVariants} initial="enter" animate="center" exit="exit" transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}>
-            <h3>Récapitulatif de votre demande</h3>
+            <h3>Riepilogo della tua richiesta</h3>
             <div style={{ background: 'var(--bg-card2)', borderRadius: 'var(--radius)', padding: 16, marginBottom: 20 }}>
-              <div className="admin-field"><span className="admin-field-label">Montant</span><span className="admin-field-value">{form.montant} €</span></div>
-              <div className="admin-field"><span className="admin-field-label">Durée</span><span className="admin-field-value">{form.duree} mois</span></div>
-              <div className="admin-field"><span className="admin-field-label">Mensualité estimée</span><span className="admin-field-value">{(form.montant * 0.045 / 12 * Math.pow(1 + 0.045 / 12, form.duree) / (Math.pow(1 + 0.045 / 12, form.duree) - 1)).toFixed(2)} €</span></div>
-              <div className="admin-field"><span className="admin-field-label">Nom</span><span className="admin-field-value">{form.prenom} {form.nom}</span></div>
+              <div className="admin-field"><span className="admin-field-label">Importo</span><span className="admin-field-value">{form.montant} €</span></div>
+              <div className="admin-field"><span className="admin-field-label">Durata</span><span className="admin-field-value">{form.duree} mesi</span></div>
+              <div className="admin-field"><span className="admin-field-label">Mensilità stimata</span><span className="admin-field-value">{(form.montant * 0.045 / 12 * Math.pow(1 + 0.045 / 12, form.duree) / (Math.pow(1 + 0.045 / 12, form.duree) - 1)).toFixed(2)} €</span></div>
+              <div className="admin-field"><span className="admin-field-label">Nome</span><span className="admin-field-value">{form.prenom} {form.nom}</span></div>
               <div className="admin-field"><span className="admin-field-label">Email</span><span className="admin-field-value">{form.email}</span></div>
-              <div className="admin-field" style={{ borderBottom: 'none' }}><span className="admin-field-label">Situation</span><span className="admin-field-value">{form.situation}</span></div>
+              <div className="admin-field" style={{ borderBottom: 'none' }}><span className="admin-field-label">Situazione</span><span className="admin-field-value">{form.situation}</span></div>
             </div>
 
             <div className="form-check">
               <input type="checkbox" id="cgu" checked={form.acceptCgu} onChange={e => update('acceptCgu', e.target.checked)} />
-              <label htmlFor="cgu">J'accepte les <Link to="/cgu" target="_blank">Conditions Générales d'Utilisation</Link> et la <Link to="/politique-confidentialite" target="_blank">Politique de confidentialité</Link>.</label>
+              <label htmlFor="cgu">Accetto i <Link to="/cgu" target="_blank">Termini e Condizioni d'Uso</Link> e la <Link to="/politique-confidentialite" target="_blank">Politica sulla privacy</Link>.</label>
             </div>
             <div className="form-check">
               <input type="checkbox" id="certif" checked={form.acceptCertif} onChange={e => update('acceptCertif', e.target.checked)} />
-              <label htmlFor="certif">Je certifie que les informations fournies sont exactes.</label>
+              <label htmlFor="certif">Certifico che le informazioni fornite sono esatte.</label>
             </div>
           </motion.div>
         )}
@@ -310,14 +316,14 @@ function MultiStepForm({ preselectedType }) {
         </AnimatePresence>
 
         <div className="form-actions">
-          {step > 1 ? <button type="button" className="btn btn-ghost" onClick={prev}>← Retour</button> : <div />}
+          {step > 1 ? <button type="button" className="btn btn-ghost" onClick={prev}>← Indietro</button> : <div />}
           {step < 5 ? (
             <button type="button" className="btn btn-primary" onClick={next} disabled={!canNext()} style={{ opacity: canNext() ? 1 : 0.5, cursor: canNext() ? 'pointer' : 'not-allowed' }}>
-              Suivant →
+              Avanti →
             </button>
           ) : (
             <button type="submit" className="btn btn-primary" disabled={!canNext() || sending} style={{ opacity: canNext() ? 1 : 0.5, cursor: canNext() ? 'pointer' : 'not-allowed' }}>
-              {sending ? 'Envoi en cours…' : 'Soumettre ma demande'}
+              {sending ? 'Invio in corso…' : 'Invia richiesta'}
             </button>
           )}
         </div>
@@ -336,13 +342,13 @@ function FileUpload({ label, onChange }) {
         <>
           <div className="file-upload-icon" style={{ color: 'var(--green)' }}>✓</div>
           <div className="file-upload-text">{file.name}</div>
-          <div className="file-upload-hint">{(file.size / 1024 / 1024).toFixed(1)} Mo — Cliquez pour changer</div>
+          <div className="file-upload-hint">{(file.size / 1024 / 1024).toFixed(1)} MB — Clicca per cambiare</div>
         </>
       ) : (
         <>
           <div className="file-upload-icon">📄</div>
           <div className="file-upload-text">{label}</div>
-          <div className="file-upload-hint">Cliquez pour sélectionner un fichier</div>
+          <div className="file-upload-hint">Clicca per selezionare un file</div>
         </>
       )}
     </div>

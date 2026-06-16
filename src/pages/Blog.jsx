@@ -7,18 +7,18 @@ const fadeUp = { initial: { opacity: 0, y: 24 }, whileInView: { opacity: 1, y: 0
 const stagger = { whileInView: 'animate', viewport: { once: true, margin: '-40px' }, initial: 'initial', variants: { animate: { transition: { staggerChildren: 0.08 } } } }
 
 const articles = [
-  { icon: '💡', cat: 'Conseils', date: '15 juin 2026', title: '5 astuces pour gérer un imprévu financier', excerpt: 'Découvrez comment faire face aux dépenses imprévues sans stresser.' },
-  { icon: '📊', cat: 'Budget', date: '8 juin 2026', title: 'Micro-crédit vs découvert bancaire : quel est le meilleur choix ?', excerpt: 'Comparatif détaillé entre le micro-crédit et le découvert autorisé.' },
-  { icon: '🔒', cat: 'Sécurité', date: '1 juin 2026', title: 'Comment reconnaître un prêt entre particuliers fiable ?', excerpt: 'Les critères essentiels pour identifier une plateforme de confiance.' },
-  { icon: '👥', cat: 'Témoignages', date: '25 mai 2026', title: 'Sophie : "Grâce à Prestiter, j\'ai pu réparer ma voiture"', excerpt: 'L\'histoire de Sophie qui a obtenu 300€ en 24h pour une réparation urgente.' },
-  { icon: '📝', cat: 'Guide', date: '18 mai 2026', title: 'Les documents nécessaires pour une demande de prêt', excerpt: 'Tout ce qu\'il faut préparer avant de soumettre votre demande.' },
-  { icon: '💰', cat: 'Épargne', date: '10 mai 2026', title: 'Prêter entre particuliers : une alternative à l\'épargne traditionnelle', excerpt: 'Comment le prêt entre particuliers peut vous offrir un meilleur rendement.' },
+  { icon: '💡', cat: 'Consigli', date: '15 giugno 2026', title: '5 consigli per gestire un imprevisto finanziario', excerpt: 'Scopri come affrontare le spese impreviste senza stress.' },
+  { icon: '📊', cat: 'Bilancio', date: '8 giugno 2026', title: 'Microcredito vs scoperto bancario: qual è la scelta migliore?', excerpt: 'Confronto dettagliato tra microcredito e scoperto autorizzato.' },
+  { icon: '🔒', cat: 'Sicurezza', date: '1 giugno 2026', title: 'Come riconoscere un prestito tra privati affidabile?', excerpt: 'I criteri essenziali per identificare una piattaforma di fiducia.' },
+  { icon: '👥', cat: 'Testimonianze', date: '25 maggio 2026', title: 'Sophie: "Grazie a Prestiter ho potuto riparare la mia auto"', excerpt: 'La storia di Sophie che ha ottenuto 300€ in 24h per una riparazione urgente.' },
+  { icon: '📝', cat: 'Guida', date: '18 maggio 2026', title: 'I documenti necessari per una richiesta di prestito', excerpt: 'Tutto quello che devi preparare prima di inviare la tua richiesta.' },
+  { icon: '💰', cat: 'Risparmio', date: '10 maggio 2026', title: 'Prestare tra privati: un\'alternativa al risparmio tradizionale', excerpt: 'Come il prestito tra privati può offrirti un rendimento migliore.' },
 ]
 
 export default function Blog() {
   return (
     <>
-      <PageHero title="Blog & Conseils" lead="Articles et conseils pour mieux gérer votre budget et comprendre le prêt entre particuliers." />
+      <PageHero title="Blog & Consigli" lead="Articoli e consigli per gestire meglio il tuo bilancio e comprendere il prestito tra privati." />
 
       <section className="section">
         <div className="container">
@@ -37,7 +37,7 @@ export default function Blog() {
         </div>
       </section>
 
-      <CTASection title="Vous avez un projet ?" text="Pas besoin d'article, lancez-vous !" cta={{ to: '/emprunter', label: 'Faire ma demande' }} />
+      <CTASection title="Hai un progetto?" text="Non serve un articolo, lanciati!" cta={{ to: '/emprunter', label: 'Fai richiesta' }} />
     </>
   )
 }
