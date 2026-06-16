@@ -7,7 +7,7 @@ const data = {
   badge: 'Taux 0%',
   path: '/prets/ptz',
   tauxZero: true,
-  minMontant: 100, maxMontant: 300,
+  minMontant: 100, maxMontant: 50000,
   minDuree: 3, maxDuree: 6,
   cibles: ['Allocataires', 'Personnes en difficulté', 'Profils exclus du système bancaire'],
   description: 'Notre PTZ solidaire est un prêt sans intérêts, financé par des prêteurs particuliers solidaires. Réservé aux profils les plus fragiles : allocataires, personnes en difficulté financière temporaire, profils exclus du système bancaire classique. Vous ne remboursez que le capital emprunté.',
@@ -18,7 +18,7 @@ const data = {
   ],
   exemple: { icon: '💪', title: 'Fatima, allocataire RSA', scenario: 'Une facture d\'électricité impayée menaçait la coupure. PTZ solidaire de 200€ sur 4 mois à 0%, remboursement de seulement 50€ par mois.', mensualite: '50,00 €' },
   conditions: [
-    { title: 'Montant', text: 'De 100 € à 300 €' },
+    { title: 'Montant', text: 'De 100 € à 50 000 €' },
     { title: 'Durée', text: 'De 3 à 6 mois' },
     { title: 'TAEG', text: '0 % — aucun intérêt' },
     { title: 'Validation', text: 'Soumis à validation spéciale par l\'équipe Prestiter' },

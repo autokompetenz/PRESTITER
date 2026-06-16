@@ -108,7 +108,7 @@ function MultiStepForm({ preselectedType }) {
   const [sending, setSending] = useState(false)
   const [error, setError] = useState('')
   const [form, setForm] = useState({
-    montant: 300, duree: 6, motif: preselectedType && loanTypeNames[preselectedType] ? loanTypeNames[preselectedType] : '',
+    montant: 5000, duree: 6, motif: preselectedType && loanTypeNames[preselectedType] ? loanTypeNames[preselectedType] : '',
     nom: '', prenom: '', naissance: '', email: '', telephone: '', adresse: '', situation: '',
     iban: '', titulaire: '',
     recto: null, verso: null,
@@ -189,7 +189,7 @@ function MultiStepForm({ preselectedType }) {
             <h3>Votre projet</h3>
             <div className="form-group">
               <label>Montant souhaité</label>
-              <input type="range" className="simulator-range" min={100} max={600} step={50} value={form.montant}
+              <input type="range" className="simulator-range" min={100} max={3000000} step={1000} value={form.montant}
                 onChange={e => update('montant', Number(e.target.value))} />
               <div style={{ textAlign: 'right', fontWeight: 800, color: 'var(--blue)', fontSize: 18, marginTop: 4 }}>{Number(form.montant).toLocaleString('fr-FR')} €</div>
             </div>

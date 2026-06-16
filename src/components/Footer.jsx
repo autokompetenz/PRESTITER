@@ -8,7 +8,7 @@ export default function Footer() {
           <Link to="/" className="navbar-brand" style={{ marginBottom: 12 }}>
             <img src="/assets/images/prestiter-logo-blue.svg" alt="Prestiter" style={{ height: 28 }} />
           </Link>
-          <p style={{ maxWidth: 300 }}>Prestiter SPA est une plateforme de micro-prêt entre particuliers, simple, rapide et 100% en ligne.</p>
+          <p style={{ maxWidth: 300 }}>Prestiter SPA est une plateforme de prêt entre particuliers, simple, rapide et 100% en ligne.</p>
           <p className="small" style={{ marginTop: 12 }}>ORIAS : en cours d'enregistrement</p>
         </div>
 

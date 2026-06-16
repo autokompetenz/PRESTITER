@@ -18,7 +18,7 @@ const otherTypes = [
 ]
 
 export default function PretTypeLayout({ data }) {
-  const [montant, setMontant] = useState(data.minMontant || 200)
+  const [montant, setMontant] = useState(data.minMontant || 1000)
   const [duree, setDuree] = useState(data.minDuree || 3)
   const taux = data.tauxZero ? 0 : 4.5
   const interets = montant * (taux / 100) / 12 * duree
@@ -60,7 +60,7 @@ export default function PretTypeLayout({ data }) {
                   </div>
                 )}
                 <label className="simulator-label">Montant : <strong>{montant} €</strong></label>
-                <input type="range" min={data.minMontant} max={data.maxMontant} step={50} value={montant} onChange={e => setMontant(Number(e.target.value))} className="simulator-range" />
+                <input type="range" min={data.minMontant} max={data.maxMontant} step={1000} value={montant} onChange={e => setMontant(Number(e.target.value))} className="simulator-range" />
                 <label className="simulator-label">Durée : <strong>{duree} mois</strong></label>
                 <input type="range" min={data.minDuree} max={data.maxDuree} step={1} value={duree} onChange={e => setDuree(Number(e.target.value))} className="simulator-range" />
                 <div className="simulator-result" style={{ gridTemplateColumns: '1fr 1fr', gap: 12, padding: 16, margin: '16px 0 0' }}>

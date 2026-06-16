@@ -6,10 +6,10 @@ const data = {
   hero: 'Regroupez vos petites dettes en une seule mensualité plus simple à gérer.',
   badge: 'Consolidation',
   path: '/prets/consolidation',
-  minMontant: 300, maxMontant: 600,
+  minMontant: 300, maxMontant: 3000000,
   minDuree: 6, maxDuree: 10,
   cibles: ['Personnes avec plusieurs petites dettes'],
-  description: 'Plusieurs découverts, des petites dettes qui s\'accumulent ? Notre prêt de consolidation de 300€ à 600€ vous permet de tout regrouper en une seule mensualité fixe, plus facile à gérer. Respirez, on s\'occupe du reste.',
+  description: 'Plusieurs découverts, des petites dettes qui s\'accumulent ? Notre prêt de consolidation de 300€ à 3 000 000€ vous permet de tout regrouper en une seule mensualité fixe, plus facile à gérer. Respirez, on s\'occupe du reste.',
   avantages: [
     { icon: '🔄', title: 'Une seule mensualité', text: 'Fini le casse-tête des multiples échéances. Un seul prêt, une seule date.' },
     { icon: '📉', title: 'Taux unique', text: 'TAEG fixe de 4,5% sur la totalité du montant consolidé.' },
@@ -17,7 +17,7 @@ const data = {
   ],
   exemple: { icon: '📊', title: 'Ahmed, 42 ans, dettes multiples', scenario: 'Trois découverts bancaires et un crédit revolving à 18% chez différents organismes. Consolidation de 550€ sur 8 mois pour tout regrouper.', mensualite: '71,33 €' },
   conditions: [
-    { title: 'Montant', text: 'De 300 € à 600 € (montant minimum plus élevé)' },
+    { title: 'Montant', text: 'De 300 € à 3 000 000 € (montant minimum plus élevé)' },
     { title: 'Durée', text: 'De 6 à 10 mois' },
     { title: 'Dettes à consolider', text: 'Lister les dettes à regrouper dans le formulaire' },
     { title: 'Âge minimum', text: '18 ans minimum' },

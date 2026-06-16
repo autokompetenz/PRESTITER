@@ -11,10 +11,10 @@ const fadeUp = { initial: { opacity: 0, y: 24 }, whileInView: { opacity: 1, y: 0
 const stagger = { whileInView: 'animate', viewport: { once: true, margin: '-40px' }, initial: 'initial', variants: { animate: { transition: { staggerChildren: 0.08 } } } }
 
 const loanTypes = [
-  { icon: '🎯', label: 'Prêt personnel', to: '/prets/personnel', desc: '100€ à 600€ — Sans justificatif d\'utilisation', tag: 'Populaire' },
-  { icon: '⚡', label: 'Prêt d\'urgence', to: '/prets/urgence', desc: '100€ à 300€ — Réponse sous quelques heures', tag: 'Prioritaire' },
-  { icon: '🎓', label: 'Prêt étudiant', to: '/prets/etudiant', desc: '100€ à 400€ — Sans revenus stables', tag: 'Jeunes' },
-  { icon: '💼', label: 'Prêt professionnel', to: '/prets/professionnel', desc: '200€ à 600€ — Freelances & auto-entrepreneurs', tag: 'Pro' },
+  { icon: '🎯', label: 'Prêt personnel', to: '/prets/personnel', desc: '100€ à 3 000 000€ — Sans justificatif', tag: 'Populaire' },
+  { icon: '⚡', label: 'Prêt d\'urgence', to: '/prets/urgence', desc: '100€ à 50 000€ — Réponse sous quelques heures', tag: 'Prioritaire' },
+  { icon: '🎓', label: 'Prêt étudiant', to: '/prets/etudiant', desc: '100€ à 50 000€ — Sans revenus stables', tag: 'Jeunes' },
+  { icon: '💼', label: 'Prêt professionnel', to: '/prets/professionnel', desc: '1 000€ à 3 000 000€ — Freelances & auto-entrepreneurs', tag: 'Pro' },
 ]
 
 const advantages = [
@@ -34,9 +34,9 @@ const stats = [
 ]
 
 const useCases = [
-  { icon: '🚗', title: 'Panne de voiture', montant: 350, scenario: 'Sophie, 32 ans, a dû faire réparer sa voiture pour aller travailler. Prêt de 350€ remboursable sur 6 mois.', mensualite: '61,04 €' },
-  { icon: '📚', title: 'Fournitures scolaires', montant: 200, scenario: 'Lucas, 21 ans, étudiant en licence. Achat d\'un ordinateur pour ses cours. Prêt de 200€ sur 4 mois.', mensualite: '50,75 €' },
-  { icon: '🏠', title: 'Petits travaux', montant: 500, scenario: 'Marie et Paul, jeunes parents. Rénovation de la chambre de bébé. Prêt de 500€ sur 8 mois.', mensualite: '64,84 €' },
+  { icon: '🚗', title: 'Achat véhicule', montant: 15000, scenario: 'Sophie, 32 ans, a besoin d\'une voiture pour aller travailler. Prêt de 15 000€ remboursable sur 60 mois.', mensualite: '281,67 €' },
+  { icon: '📚', title: 'Financement études', montant: 8000, scenario: 'Lucas, 21 ans, étudiant en licence. Financement de ses frais de scolarité. Prêt de 8 000€ sur 36 mois.', mensualite: '240,24 €' },
+  { icon: '🏠', title: 'Rénovation maison', montant: 25000, scenario: 'Marie et Paul, jeunes parents. Rénovation complète de leur maison. Prêt de 25 000€ sur 84 mois.', mensualite: '331,10 €' },
 ]
 
 const profiles = [
@@ -73,7 +73,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-            >De 100 € à 600 €, remboursables sur 3 à 10 mois. Pas de justificatifs complexes, pas d'inscription. Une réponse sous 24h.</motion.p>
+            >De 100 € à 3 000 000 €, remboursables sur 3 à 120 mois. Pas de justificatifs complexes, pas d'inscription. Une réponse sous 24h.</motion.p>
             <motion.div className="hero-actions"
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}

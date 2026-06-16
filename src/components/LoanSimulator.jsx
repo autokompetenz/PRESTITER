@@ -7,7 +7,7 @@ const calcMonthly = (amount, months, rate = 4.5) => {
 }
 
 export default function LoanSimulator({ compact }) {
-  const [amount, setAmount] = useState(300)
+  const [amount, setAmount] = useState(5000)
   const [months, setMonths] = useState(6)
 
   const taeg = 4.5
@@ -28,14 +28,14 @@ export default function LoanSimulator({ compact }) {
           type="range"
           className="simulator-range"
           min={100}
-          max={600}
-          step={50}
+          max={3000000}
+          step={1000}
           value={amount}
           onChange={e => setAmount(Number(e.target.value))}
         />
         <div className="d-flex justify-content-between" style={{ fontSize: 11, color: 'var(--text-3)', marginTop: 2 }}>
           <span>100 €</span>
-          <span>600 €</span>
+          <span>3 000 000 €</span>
         </div>
       </div>
 

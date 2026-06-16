@@ -17,7 +17,7 @@ export default function CGU() {
             <p>En utilisant la plateforme, vous acceptez pleinement et sans réserve les présentes CGU. Si vous refusez ces conditions, veuillez ne pas utiliser nos services.</p>
 
             <h2 style={{ marginTop: 32 }}>3. Services proposés</h2>
-            <p>Prestiter SPA propose une plateforme de mise en relation entre particuliers pour l'octroi de micro-prêts allant de 100€ à 600€, sur une durée de 3 à 10 mois.</p>
+            <p>Prestiter SPA propose une plateforme de mise en relation entre particuliers pour l'octroi de prêts allant de 100€ à 3 000 000€, sur une durée de 3 à 120 mois.</p>
 
             <h2 style={{ marginTop: 32 }}>4. Responsabilités de l'utilisateur</h2>
             <p>L'utilisateur s'engage à fournir des informations exactes et complètes lors de sa demande de prêt. Toute information frauduleuse entraînera le rejet immédiat de la demande et pourra faire l'objet de poursuites.</p>

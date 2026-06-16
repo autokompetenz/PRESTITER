@@ -6,10 +6,10 @@ const data = {
   hero: 'Petits travaux, aménagement intérieur, rénovation — financez sans crédit immobilier lourd.',
   badge: 'Travaux',
   path: '/prets/travaux',
-  minMontant: 200, maxMontant: 600,
+  minMontant: 200, maxMontant: 3000000,
   minDuree: 4, maxDuree: 10,
   cibles: ['Propriétaires', 'Locataires', 'Familles'],
-  description: 'Peinture, plomberie, électricité, mobilier, achat de matériaux, petite rénovation — notre prêt travaux de 200€ à 600€ vous permet de financer vos petits travaux sans recourir à un crédit immobilier lourd. Un justificatif de devis peut être demandé.',
+  description: 'Peinture, plomberie, électricité, mobilier, achat de matériaux, rénovation complète — notre prêt travaux de 200€ à 3 000 000€ vous permet de financer tous vos travaux sans recourir à un crédit immobilier lourd. Un justificatif de devis peut être demandé.',
   avantages: [
     { icon: '🏠', title: 'Pour tous les petits travaux', text: 'Peinture, plomberie, électricité, petit mobilier, matériaux.' },
     { icon: '🔨', title: 'Sans crédit immo lourd', text: 'Pas besoin d\'hypothèque ni de dossier bancaire complexe.' },
@@ -18,7 +18,7 @@ const data = {
   exemple: { icon: '🛋️', title: 'Marie et Paul, jeunes parents', scenario: 'Rénovation de la chambre de bébé avant l\'arrivée. Prêt travaux de 400€ sur 6 mois avec présentation d\'un devis.', mensualite: '69,17 €' },
   conditions: [
     { title: 'Statut', text: 'Propriétaire ou locataire' },
-    { title: 'Montant', text: 'De 200 € à 600 €' },
+    { title: 'Montant', text: 'De 200 € à 3 000 000 €' },
     { title: 'Durée', text: 'De 4 à 10 mois' },
     { title: 'Justificatif', text: 'Devis ou facture peut être demandé' },
     { title: 'Compte bancaire', text: 'Posséder un IBAN à votre nom' },

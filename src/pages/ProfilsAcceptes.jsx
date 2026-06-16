@@ -6,8 +6,8 @@ import CTASection from '../components/CTASection'
 const fadeUp = { initial: { opacity: 0, y: 24 }, whileInView: { opacity: 1, y: 0 }, viewport: { once: true }, transition: { duration: 0.5, ease: [0.16, 1, 0.3, 1] } }
 
 const loanTypes = [
-  { icon: '🎯', label: 'Prêt personnel', to: '/prets/personnel', desc: 'Le plus courant. Aucune justification d\'utilisation requise. De 100€ à 600€.' },
-  { icon: '⚡', label: 'Prêt d\'urgence', to: '/prets/urgence', desc: 'Traitement prioritaire, réponse sous quelques heures. Jusqu\'à 300€.' },
+  { icon: '🎯', label: 'Prêt personnel', to: '/prets/personnel', desc: 'Le plus courant. Aucune justification d\'utilisation requise. De 100€ à 3 000 000€.' },
+  { icon: '⚡', label: 'Prêt d\'urgence', to: '/prets/urgence', desc: 'Traitement prioritaire, réponse sous quelques heures. Jusqu\'à 50 000€.' },
   { icon: '🎓', label: 'Prêt étudiant', to: '/prets/etudiant', desc: 'Pour les 18-26 ans. Conditions assouplies, sans revenus stables accepté.' },
   { icon: '💼', label: 'Prêt professionnel', to: '/prets/professionnel', desc: 'Freelances, auto-entrepreneurs, artisans. Revenus variables acceptés.' },
   { icon: '🏠', label: 'Prêt travaux', to: '/prets/travaux', desc: 'Petits travaux et aménagement sans crédit immobilier lourd.' },

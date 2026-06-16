@@ -1,7 +1,7 @@
 const faq = [
   {
     category: 'Emprunteur', questions: [
-      { q: 'Combien puis-je emprunter ?', a: 'Les montants proposés vont de 100 € à 600 €, remboursables sur une durée de 3 à 10 mois.' },
+      { q: 'Combien puis-je emprunter ?', a: 'Les montants proposés vont de 100 € à 3 000 000 €, remboursables sur une durée de 3 à 120 mois.' },
       { q: 'Quel est le délai pour recevoir mon argent ?', a: 'Sous 48 heures après acceptation de votre dossier. Le virement est effectué directement sur votre compte bancaire.' },
       { q: 'Suis-je éligible si je suis en CDD / freelance / étudiant ?', a: 'Oui, nous acceptons tous les profils : CDI, CDD, freelance, indépendant, intérimaire, étudiant, allocataire RSA, retraité, sans emploi. L\'important est votre capacité de remboursement.' },
       { q: 'Comment se font les remboursements ?', a: 'Les remboursements sont prélevés automatiquement sur votre carte bancaire chaque mois, à date fixe. Vous êtes prévenu par email avant chaque prélèvement.' },
