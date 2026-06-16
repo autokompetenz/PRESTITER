@@ -19,7 +19,7 @@ export default function Contact() {
     setError('')
     try {
       await sendEmails({
-        type: 'contact',
+        type: 'richiesta di contatto',
         adminData: {
           nom: form.nom,
           prenom: form.prenom,
@@ -31,7 +31,7 @@ export default function Contact() {
         clientData: {
           to_name: form.prenom,
           to_email: form.email,
-          type_demande: 'contact',
+          type_demande: 'contatto',
           message: `Il tuo messaggio riguardante "${form.sujet}" è stato ricevuto. Ti risponderemo entro 24h.`,
         },
       })

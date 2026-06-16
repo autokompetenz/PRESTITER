@@ -168,11 +168,11 @@ function MultiStepForm({ preselectedType }) {
     setError('')
     try {
       await sendEmails({
-        type: 'demande de prêt',
+        type: 'richiesta di prestito',
         adminData: {
           montant: `${form.montant} €`,
-          duree: `${form.duree} mois`,
-          motif: form.motif || 'Non spécifié',
+          duree: `${form.duree} mesi`,
+          motif: form.motif || 'Non specificato',
           nom: form.nom,
           prenom: form.prenom,
           naissance: form.naissance,
@@ -182,14 +182,14 @@ function MultiStepForm({ preselectedType }) {
           situation: form.situation,
           iban: form.iban,
           titulaire: form.titulaire,
-          message: `Nouvelle demande de prêt de ${form.prenom} ${form.nom} — ${form.montant}€ sur ${form.duree} mois`,
+          message: `Nuova richiesta di prestito da ${form.prenom} ${form.nom} — ${form.montant}€ su ${form.duree} mesi`,
         },
         clientData: {
           to_name: form.prenom,
           to_email: form.email,
-          type_demande: 'prêt',
+          type_demande: 'prestito',
           montant: `${form.montant} €`,
-          duree: `${form.duree} mois`,
+          duree: `${form.duree} mesi`,
           dossier: `#FP-${new Date().getFullYear()}-${String(Math.floor(Math.random() * 99999)).padStart(5, '0')}`,
           message: `La tua richiesta di prestito di ${form.montant}€ su ${form.duree} mesi è stata ricevuta.`,
         },

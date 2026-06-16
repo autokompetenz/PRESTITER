@@ -195,19 +195,19 @@ function LenderForm() {
     setError('')
     try {
       await sendEmails({
-        type: 'demande prêteur',
+        type: 'richiesta investitore',
         adminData: {
           nom: form.nom,
           prenom: form.prenom,
           email: form.email,
           telephone: form.telephone,
           montant: form.montant,
-          message: form.message || 'Non spécifié',
+          message: form.message || 'Non specificato',
         },
         clientData: {
           to_name: form.prenom,
           to_email: form.email,
-          type_demande: 'prêteur',
+          type_demande: 'investitore',
           message: `La tua richiesta per diventare investitore è stata ricevuta. Il nostro team ti contatterà entro 24h.`,
         },
       })

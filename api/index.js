@@ -83,7 +83,7 @@ app.post('/api/send', async (req, res) => {
             '<tr><td style="padding:4px 0;vertical-align:top;width:24px"><span style="display:inline-block;width:20px;height:20px;border-radius:50%;background:#0056B3;color:#fff;font-size:11px;font-weight:700;text-align:center;line-height:20px">3</span></td><td style="padding:4px 0 4px 10px;font-size:13px;color:#4A4A5A;line-height:1.5">Se approvata, riceverai i fondi in 48 ore</td></tr>',
             '</table>',
             '</td></tr></table></td></tr>',
-            clientData.type_demande === 'prêt'
+            clientData.type_demande === 'prestito'
               ? '<tr><td style="padding:16px 0 0"><table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="background:rgba(0,86,179,0.04);border:1px solid rgba(0,86,179,0.12);border-radius:10px"><tr><td style="padding:16px 20px"><table role="presentation" cellpadding="0" cellspacing="0" width="100%"><tr><td style="width:32px;vertical-align:top;font-size:18px;line-height:1.4">📌</td><td style="padding-left:10px;font-size:13px;color:#4A4A5A;line-height:1.5">Tieni a portata di mano il tuo documento d\'identità e il codice IBAN. Potrebbero servirti per i prossimi passaggi.</td></tr></table></td></tr></table></td></tr>'
               : '',
             '</table>',
