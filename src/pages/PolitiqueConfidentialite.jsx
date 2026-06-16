@@ -27,7 +27,7 @@ export default function PolitiqueConfidentialite() {
 
             <h2 style={{ marginTop: 32 }}>6. I tuoi diritti</h2>
             <p>In conformità con il RGPD, hai i seguenti diritti:<br />- Diritto di accesso ai tuoi dati<br />- Diritto di rettifica<br />- Diritto alla cancellazione<br />- Diritto alla limitazione del trattamento<br />- Diritto alla portabilità dei dati</p>
-            <p>Per esercitare i tuoi diritti, contattaci a: contact@prestiter-spa.fr.</p>
+            <p>Per esercitare i tuoi diritti, contattaci a: contatto@prestiteritalia.it.</p>
 
             <h2 style={{ marginTop: 32 }}>7. Cookie</h2>
             <p>Il nostro sito utilizza solo cookie tecnici necessari al funzionamento della piattaforma. Nessun cookie pubblicitario o di tracciamento viene utilizzato.</p>

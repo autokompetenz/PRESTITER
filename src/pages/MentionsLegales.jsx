@@ -12,7 +12,7 @@ export default function MentionsLegales() {
           <motion.div {...fadeUp}>
             <h2>Editore della piattaforma</h2>
             <p><strong>Prestiter SPA</strong><br />Società per azioni semplificata<br />Via della Spiga, 24 — 20121 Milano, Italia</p>
-            <p>Email: contact@prestiter-spa.fr<br />Telefono: +39 02 1234 5678</p>
+            <p>Email: contatto@prestiteritalia.it</p>
 
             <h2 style={{ marginTop: 32 }}>Status legale</h2>
             <p>Prestiter SPA è registrata presso l'ORIAS (Organismo per il Registro degli Intermediari Assicurativi) come Intermediario nel Finanziamento Partecipativo (IFP) con numero in fase di attribuzione.</p>

@@ -31,10 +31,10 @@ const faq = [
     category: 'Generale', questions: [
       { q: 'La piattaforma \u00E8 regolamentata?', a: 'Prestiter SPA \u00E8 registrata presso l\'ORIAS come Intermediario nel Finanziamento Partecipativo (IFP) e soggetta al controllo dell\'ACPR. Il nostro numero di registrazione \u00E8 in fase di attribuzione.' },
       { q: 'I miei dati personali sono protetti?', a: 'S\u00EC, tutti i tuoi dati sono conservati in modo sicuro e crittografato (SSL 256-bit). Non rivendiamo alcuna informazione a terzi. Piena conformit\u00E0 al RGPD.' },
-      { q: 'Come contattare il servizio clienti?', a: 'Via email a contact@prestiter-spa.fr o telefonicamente al +39 02 1234 5678, dal luned\u00EC al venerd\u00EC dalle 9:00 alle 18:00. Risposta entro 24 ore lavorative via email.' },
+      { q: 'Come contattare il servizio clienti?', a: 'Via email a contatto@prestiteritalia.it. Risposta entro 24 ore lavorative.' },
       { q: 'C\'\u00E8 un\'assicurazione associata al prestito?', a: 'L\'assicurazione non \u00E8 obbligatoria presso Prestiter. Raccomandiamo comunque di stipulare un\'assicurazione contro la perdita del lavoro o l\'invalidit\u00E0 presso il tuo assicuratore abituale.' },
       { q: 'Posso annullare la mia richiesta dopo l\'accettazione?', a: 'S\u00EC, hai diritto a un periodo di recesso di 14 giorni dalla firma del contratto, in conformit\u00E0 con la legislazione vigente.' },
-      { q: 'Come presentare un reclamo?', a: 'Invia il tuo reclamo via email a contact@prestiter-spa.fr con oggetto "Reclamo". Il nostro team ti risponde entro 48 ore lavorative. Se la controversia persiste, puoi contattare il mediatore competente.' },
+      { q: 'Come presentare un reclamo?', a: 'Invia il tuo reclamo via email a contatto@prestiteritalia.it con oggetto "Reclamo". Il nostro team ti risponde entro 48 ore lavorative. Se la controversia persiste, puoi contattare il mediatore competente.' },
       { q: 'Quali sono gli orari di apertura?', a: 'Il nostro team \u00E8 disponibile dal luned\u00EC al venerd\u00EC dalle 9:00 alle 18:00 (ora italiana, CET). Il modulo di richiesta \u00E8 accessibile 24 ore su 24, 7 giorni su 7.' },
     ]
   }

@@ -26,7 +26,7 @@ export default function Confirmation() {
             <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
               {[
                 'Controlla la tua email (ricorda di controllare lo spam)',
-                'Aggiungi contact@prestiter-spa.fr ai tuoi contatti',
+                'Aggiungi contatto@prestiteritalia.it ai tuoi contatti',
                 'Tieni il telefono a portata di mano',
                 'Prepara il tuo documento d\'identità originale',
               ].map((s, i) => (
@@ -36,7 +36,7 @@ export default function Confirmation() {
               ))}
             </ul>
             <p style={{ fontSize: 12, color: 'var(--text-3)', marginTop: 12, padding: '10px 14px', background: 'rgba(200,16,46,0.06)', border: '1px solid rgba(200,16,46,0.15)', borderRadius: 'var(--radius)' }}>
-              ⚠ Necessità urgente? Contattaci al <strong>+39 02 1234 5678</strong> (Lun-Ven 9:00-18:00)
+              ⚠ Necessità urgente? Contattaci via email a <strong>contatto@prestiteritalia.it</strong> — rispondiamo entro 24h.
             </p>
           </div>
 

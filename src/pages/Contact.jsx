@@ -81,8 +81,7 @@ export default function Contact() {
               <div className="d-flex flex-column gap-4">
                 {[
                   { icon: '📍', title: 'Indirizzo', text: 'Via della Spiga, 24\n20121 Milano, Italia' },
-                  { icon: '📞', title: 'Telefono', text: '+39 02 1234 5678\nLun-Ven 9:00-18:00' },
-                  { icon: '✉️', title: 'Email', text: 'contact@prestiter-spa.fr\nRisposta entro 24h' },
+                  { icon: '✉️', title: 'Email', text: 'contatto@prestiteritalia.it\nRisposta entro 24h' },
                 ].map((item, i) => (
                   <div key={i} className="d-flex gap-3 align-items-start p-4 border rounded-4">
                     <div style={{ width: 44, height: 44, borderRadius: 12, background: 'var(--blue-bg)', color: 'var(--blue)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, fontSize: 20 }}>{item.icon}</div>
@@ -130,9 +129,9 @@ export default function Contact() {
             {[
               { q: 'Quali sono i vostri orari di apertura?', r: 'Il nostro team è disponibile dal lunedì al venerdì, dalle 9:00 alle 18:00 (ora italiana). Il modulo di contatto è accessibile 24h/24 e rispondiamo entro 24h.' },
               { q: 'Dove siete situati?', r: 'La nostra sede è a Milano, Via della Spiga, 24. Operiamo principalmente in Italia, Francia, Belgio e Svizzera.' },
-              { q: 'Posso contattarvi telefonicamente?', r: 'Sì, dal lunedì al venerdì dalle 9:00 alle 18:00 al +39 02 1234 5678. Per le richieste urgenti, privilegiate il telefono.' },
+              { q: 'Come posso contattarvi?', r: 'Puoi scriverci via email a contatto@prestiteritalia.it e riceverai risposta entro 24 ore lavorative.' },
               { q: 'Come seguire la mia richiesta di prestito?', r: 'Riceverai una email di conferma immediata dopo la tua richiesta. Il nostro team ti ricontatterà entro 24h per fare il punto. Puoi anche chiamarci.' },
-              { q: 'Offrite un servizio in inglese?', r: 'Yes, our team speaks English. You can contact us at contact@prestiter-spa.fr and we will reply in English within 24h.' },
+              { q: 'Offrite un servizio in inglese?', r: 'Yes, our team speaks English. You can contact us at contatto@prestiteritalia.it and we will reply in English within 24h.' },
             ].map((item, i) => (
               <ContactFaqItem key={i} q={item.q} r={item.r} />
             ))}
