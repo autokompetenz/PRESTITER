@@ -80,22 +80,35 @@ export default function Emprunter() {
       </section>
 
       <motion.div
-        initial={{ opacity: 0, y: 10 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-        style={{ textAlign: 'center', padding: '8px 0 32px' }}
+        transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+        style={{ textAlign: 'center', padding: '12px 0 40px' }}
       >
         <motion.div
-          animate={{ y: [0, 8, 0] }}
-          transition={{ duration: 1.8, repeat: Infinity, ease: 'easeInOut' }}
-          style={{ display: 'inline-flex', flexDirection: 'column', alignItems: 'center', gap: 4, color: 'var(--text-3)', fontSize: 13, cursor: 'pointer' }}
+          animate={{ y: [0, -6, 0, 12, 0] }}
+          transition={{ duration: 2.2, repeat: Infinity, ease: 'easeInOut' }}
+          style={{ display: 'inline-flex', flexDirection: 'column', alignItems: 'center', gap: 8, cursor: 'pointer' }}
           onClick={() => document.getElementById('formulaire')?.scrollIntoView({ behavior: 'smooth' })}
         >
-          <span>Scorri per il modulo</span>
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
-            <polyline points="6 9 12 15 18 9" />
-          </svg>
+          <motion.span
+            animate={{ opacity: [0.4, 1, 0.4] }}
+            transition={{ duration: 2.2, repeat: Infinity, ease: 'easeInOut' }}
+            style={{ fontSize: 14, fontWeight: 600, color: 'var(--blue)', letterSpacing: '0.3px' }}
+          >
+            Scorri per il modulo ↓
+          </motion.span>
+          <motion.div
+            animate={{ scale: [1, 1.15, 1], opacity: [0.6, 1, 0.6] }}
+            transition={{ duration: 2.2, repeat: Infinity, ease: 'easeInOut' }}
+          >
+            <div style={{ width: 40, height: 40, borderRadius: '50%', background: 'var(--blue-bg)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--blue)" strokeWidth="2.5" strokeLinecap="round">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </div>
+          </motion.div>
         </motion.div>
       </motion.div>
 
