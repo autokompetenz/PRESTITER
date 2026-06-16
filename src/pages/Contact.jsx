@@ -32,7 +32,7 @@ export default function Contact() {
           to_name: form.prenom,
           to_email: form.email,
           type_demande: 'contact',
-          message: `Votre message concernant "${form.sujet}" a bien été reçu. Nous vous répondrons sous 24h.`,
+          message: `Il tuo messaggio riguardante "${form.sujet}" è stato ricevuto. Ti risponderemo entro 24h.`,
         },
       })
       setSent(true)

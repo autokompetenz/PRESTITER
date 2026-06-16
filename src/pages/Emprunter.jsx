@@ -79,6 +79,26 @@ export default function Emprunter() {
         </div>
       </section>
 
+      <motion.div
+        initial={{ opacity: 0, y: 10 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+        style={{ textAlign: 'center', padding: '8px 0 32px' }}
+      >
+        <motion.div
+          animate={{ y: [0, 8, 0] }}
+          transition={{ duration: 1.8, repeat: Infinity, ease: 'easeInOut' }}
+          style={{ display: 'inline-flex', flexDirection: 'column', alignItems: 'center', gap: 4, color: 'var(--text-3)', fontSize: 13, cursor: 'pointer' }}
+          onClick={() => document.getElementById('formulaire')?.scrollIntoView({ behavior: 'smooth' })}
+        >
+          <span>Scorri per il modulo</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+            <polyline points="6 9 12 15 18 9" />
+          </svg>
+        </motion.div>
+      </motion.div>
+
       <section className="section section--alt" id="formulaire" style={{ position: 'relative', overflow: 'hidden' }}>
         <FloatingDecorations />
         <div className="container">
@@ -158,7 +178,7 @@ function MultiStepForm({ preselectedType }) {
           montant: `${form.montant} €`,
           duree: `${form.duree} mois`,
           dossier: `#FP-${new Date().getFullYear()}-${String(Math.floor(Math.random() * 99999)).padStart(5, '0')}`,
-          message: `Votre demande de prêt de ${form.montant}€ sur ${form.duree} mois a bien été reçue.`,
+          message: `La tua richiesta di prestito di ${form.montant}€ su ${form.duree} mesi è stata ricevuta.`,
         },
       })
       navigate('/confirmation')
